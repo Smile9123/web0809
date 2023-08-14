@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" size="20" maxlength="10" value="홍길동">
+            <br/>
+            <label for="id">아이디</label>
+            <input type="text" id="id" maxlength="10" placeholder="아이디는 10자 이하입니다.">
+            <br/>
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw" placeholder="비밀번호 입력" value="1234">
+            <br/>
+            <label for="srch">검색</label>
+            <input type="search" id="srch">
+            <br/>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
+            <br/>
+        </fieldset>
+        <fieldset>
+            <legend>배송 설정</legend>
+            <label for="iPhone15">
+                <input type="checkbox" id="iPhone15" value="iPhone15"> iPhone 15
+            </label>
+            <label for="iPhone15 pro">
+                <input type="checkbox" id="iPhone15pro" value="iPhone15pro" checked> iPhone 15 Pro
+            </label>
+            <label for="iPhone15 pro max">
+                <input type="checkbox" id="iPhone15 pro max" value="iPhone15 pro max"> iPhone 15 Pro Max
+            </label>
+
+            <p>포장 선택</p>
+            <label for="packyes">
+                <input type="radio" id="packyes" name="pack" value="packyes"> 포장 O
+            </label>
+            <label for="packyno">
+                <input type="radio" id="packno" name="pack" value="packno"> 포장 X
+            </label>
+            <br/>
+            <label for="count">
+                수량
+                <input type="number" id="count" min="-10" max="10" step="2" value="4">
+            </label>
+            <br/>
+            <label for="count2">
+                수량
+                <input type="range" id="count2" min="-10" max="10" step="4" value="2">
+            </label>
+
+            <br/>
+
+            <label for="date1">
+                날짜
+                <input type="date" id="date1">
+            </label>
+
+            <label for="date2">
+                월
+                <input type="month" id="date2">
+            </label>
+
+            <br/>
+
+            <label for="date3">
+                주
+                <input type="week" id="date3">
+            </label>
+            <label for="date4">
+                시각
+                <input type="time" id="date4">
+            </label>
+            <label for="date5">
+                날짜/시각
+                <input type="datetime-local" id="date5">
+            </label>
+        </fieldset>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="초기화하기">
+        <input type="button" onclick="alert('안녕!')" value="안녕 말하기">
+        <input type="image" src="img/a/samsung logo.png" width="100px">
+        <input type="file">
+        <input type="color">
+    </form>
+</body>
+</html>
