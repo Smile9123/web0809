@@ -1,0 +1,4 @@
+form
+텍스트 입력 할 때 input
+-> 세로 줄을 조절 할 수 없음
+textarea

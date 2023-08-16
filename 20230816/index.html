@@ -7,6 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <fieldset>
+            <legend>배송정보</legend>
+            <label for="etc">
+                자기소개
+                <textarea name="" id="etc" cols="30" rows="10">메시지를 입력하세요.</textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>드롭다운</legend>
+            <label for="fruit">
+            과일
+            <select name="fruit" id="fruit">
+            <option value="strawberry">딸기</option>
+            <option value="apple" selected>사과</option>
+            <option value="watermelon">수박</option>
+            </select>
+            </label>
+            <label for="fruit2">
+                과일
+                <select name="fruit2" id="fruit2" multiple>
+                <option value="strawberry2" selected>딸기2</option>
+                <option value="apple2">사과2</option>
+                <option value="watermelon2" selected>수박2</option>
+                </select>
+                </label>
+                <br />
+
+                <label for="subj">
+                    과목선택
+                    <input name="subj" type="text" list="subject" id="subj">
+                    <datalist id="subject">
+                        <option value="html">HTML</option>
+                        <option value="web">웹</option>
+                        <option value="ps">포토샵</option>
+                    </datalist>
+                </label>
+        </fieldset>
+        <input type="submit" value="제출하기">
+        <input type="button" value="안녕 말하기" onclick="alert('안녕')">
+        <button type="button" onclick="alert('안녕')">안녕 말하기</button>
+    </form>
 </body>
 </html>
