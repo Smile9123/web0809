@@ -1,275 +1,337 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        th, td {
-            font-size: 12px;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <table border="1" style="border-collapse: collapse;">
-    <caption></caption>
-    <colgroup>
-        <col style="background-color: gold;"
-    </colgroup>
-    <thead>
-        <tr>
-            <th colspan="2" style="background-color: pink;">필수입력사항</th>
-        </tr>
-    </thead>
-        <tr>
-            <th>이름</th>
-            <td>
-                <label for="name">
-                    <input type="text" id="name">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>주민등록번호</th>
-            <td>
-                <label for="num">
-                    <input type="text" id="num">
-                </label>
-                -
-                <label for="num2">
-                    <input type="password" id="num">
-                </label> 
-                <br/>
-                ※256bit 암호화 값으로 저장됩니다.
-        </td>
-        </tr>
-        <tr>
-            <th>아이디</th>
-            <td>
-                <label for="id">
-                    <input type="text" id="id">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>비밀번호</th>
-            <td>
-                <label for="pw">
-                    <input type="password" id="pw">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>비밀번호 확인</th>
-            <td>
-                <label for="pw2">
-                    <input type="password" id="pw2">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>생년월일</th>
-            <td>
-                <label for="birth">
-                    <input type="text" id="year">
-                </label>
-                <label for="birth2">
-                    <select name="birth2" for="month">
-                        <option value="1">1</option>
-                    <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    월
-                </label>
-                <label for="birth3">
-                    <select name="birth3" id="day">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    </select>
-                    일
-                    <label for="choose">
-                        <input type="radio" id="sun" name="choose">양력
-                        <input type="radio" id="moon" name="choose">음력
-                    </label>
-            </td>
-        </tr>
-        <tr>
-            <th>E-Mail</th>
-            <td>
-            <label for="email">
-                <input type="text" id="email"> @
-                <input type="text" id="email">
-            </label>
-            <label for="choose2">
-                <select name="choose2" id="email">
-                    <option value="etc">==직접입력==</option>
-                    <option value="naver">naver.com</option>
-                    <option value="daum">daum.net</option>
-                    <option value="google">gmail.com</option>
-                </select>
-            </label>
-            </td>
-        </tr>
-        <tr>
-            <th>E-Mail 수신여부</th>
-            <td>
-                <label for="agree">
-                    <input type="radio" id="agree" name="choose2">예
-                    <input type="radio" id="disAgree" name="choose2">아니요
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>우편번호</th>
-            <td>
-                <label for="addressNum">
-                    <input type="address">
-                </label>
-                -
-                <label for="addressNum2">
-                    <input type="address">
-                </label>
-                <input type="submit" value="우편번호 찾기">
-                </td>
-        </tr>
-        <tr>
-            <th>주소</th>
-            <td>
-                <label for="address">
-                    <input type="address" size="50">
-                </label>
-                <br/>
-                <label for="address2">
-                    <input type="address" size="50">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>전화번호</th>
-            <td>
-                <label for="localNum">
-                    <select name="loclaNum" id="number">
-                        <option value="02">02</option>
-                        <option value="055">055</option>
-                        <option value="031">031</option>
-                        <option value="054">054</option>
-                    </select>
-                </label>
-                <label for="localNum2">
-                    <input type="text">
-                </label>
-                -
-                <label for="localNum3">
-                    <input type="text">
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>핸드폰번호</th>
-            <td>
-                <label for="phNum">
-                    <select name="phNum" id="number2">
-                        <option value="010">010</option>
-                        <option value="020">020</option>
-                        <option value="030">030</option>
-                        <option value="040">040</option>
-                    </select>
-                </label>
-                <label for="phNum2">
-                    <input type="text">
-                </label>
-                -
-                <label for="phNum3">
-                    <input type="text">
-                </label>
-            </td>
-        </tr>
-        <tr>
-        <th colspan="2" style="background-color: pink;">선택입력사항</th>
-        </tr>
-        <tr>
-            <th>가입경로</th>
-            <td>
-                <label for="how">
-                    <select>
-                        <option value="how">==가입동기==</option>
-                        <option value="cafe">카페</option>
-                        <option value="sns">SNS</option>
-                        <option value="search">검색</option>
-                    </select>
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>결혼여부</th>
-            <td>
-                <label for="marriage">
-                    <input type="radio" id="marriageYes" name="marriage">이혼
-                    <input type="radio" id="marriageNo" name="marriage">기혼
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <th>직업</th>
-            <td>
-                <label for="choose3">
-                    <select>
-                        <option value="what">==직업선택==</option>
-                        <option value="none">무직</option>
-                        <option value="std">학생</option>
-                        <option value="emp">회사원</option>
-                    </select>
-            </td>
-        </tr>
-    <tfoot>
-        <tr>
-            <th colspan="2" style="background-color: white;">
-                <input type="submit" value="등록">
-                <input type="reset" value="취소">
-            </th>
-            
-        </tr>
-    </tfoot>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            th,
+            td {
+                font-size: 12px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table border="1" style="border-collapse: collapse">
+                <colgroup>
+                    <col style="background-color: gold" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th colspan="2" style="background-color: pink">
+                            필수입력사항
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td>
+                            <label for="name">
+                                <input type="text" id="name" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주민등록번호</th>
+                        <td>
+                            <label for="registNum">
+                                <input type="text" id="registNum" /> -
+                                <input type="password" id="registNum" />
+                            </label>
+                            <br />
+                            ※256bit 암호화 값으로 저장됩니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>아이디</th>
+                        <td>
+                            <label for="id">
+                                <input type="text" id="id" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <label for="pw">
+                                <input type="password" id="pw" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호 확인</th>
+                        <td>
+                            <label for="pw2">
+                                <input type="password" id="pw2" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>생년월일</th>
+                        <td>
+                            <label for="year">
+                                <input type="text" id="year" />
+                            </label>
+                            <label for="month">
+                                <select name="month" id="month">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                월
+                            </label>
+                            <label for="day">
+                                <select name="day" id="day">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                일
+                            </label>
+                            <label for="scalender">
+                                <input
+                                    type="radio"
+                                    id="yes"
+                                    name="scalender"
+                                    value="yes"
+                                />양력
+                                <input
+                                    type="radio"
+                                    id="no"
+                                    name="scalender"
+                                    value="no"
+                                />음력
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>E-Mail</th>
+                        <td>
+                            <label for="mail">
+                                <input type="text" id="mail" />
+                            </label>
+                            @
+                            <label for="mail2">
+                                <input type="text" id="mail2" />
+                            </label>
+                            <label for="site">
+                                <select name="dotcom" id="site">
+                                    <option value="1">==직접입력==</option>
+                                    <option value="2">naver.com</option>
+                                    <option value="3">daum.net</option>
+                                    <option value="4">gmail.com</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>E-Mail 수신여부</th>
+                        <td>
+                            <label for="diagree">
+                                <input
+                                    type="radio"
+                                    id="yes"
+                                    name="diagree"
+                                    value="yes"
+                                />예
+                                <input
+                                    type="radio"
+                                    id="no"
+                                    name="diagree"
+                                    value="no"
+                                />아니요
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>우편번호</th>
+                        <td>
+                            <label for="zipCode">
+                                <input type="text" id="zipCode" /> -
+                                <input type-="text" id="zipCode" />
+                            </label>
+                            <input type="submit" value="우편번호 찾기" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td>
+                            <label for="ad">
+                                <input type="address" id="ad" size="50" />
+                                <br />
+                                <input type="address" id="ad" size="50" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>
+                            <label for="num">
+                                <select name="localNum" id="num">
+                                    <option value="1">02</option>
+                                    <option value="2">031</option>
+                                    <option value="3">032</option>
+                                    <option value="4">033</option>
+                                    <option value="4">041</option>
+                                    <option value="4">042</option>
+                                    <option value="4">043</option>
+                                    <option value="4">044</option>
+                                    <option value="4">051</option>
+                                    <option value="4">052</option>
+                                    <option value="4">053</option>
+                                    <option value="4">054</option>
+                                    <option value="4">055</option>
+                                    <option value="4">061</option>
+                                    <option value="4">062</option>
+                                    <option value="4">063</option>
+                                    <option value="4">064</option>
+                                </select>
+                            </label>
+                            <label for="num2">
+                                <input
+                                    type="text"
+                                    id="num2"
+                                    maxlength="3"
+                                    size="5"
+                                />
+                                -
+                                <input
+                                    type="text"
+                                    id="num2"
+                                    maxlength="4"
+                                    size="6"
+                                />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰번호</th>
+                        <td>
+                            <label for="phNum">
+                                <select name="phoneNumber" id="phNum">
+                                    <option value="1">010</option>
+                                    <option value="2">070</option>
+                                    <option value="3">012</option>
+                                </select>
+                            </label>
+                            <label for="phNum2">
+                                <input
+                                    type="text"
+                                    id="phNum2"
+                                    maxlength="4"
+                                    size="5"
+                                />
+                                -
+                                <input
+                                    type="text"
+                                    id="phNum2"
+                                    maxlength="4"
+                                    size="6"
+                                />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" style="background-color: pink">
+                            선택입력사항
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>가입경로</th>
+                        <td>
+                            <label for="how">
+                                <select name="path" id="how">
+                                    <option value="1">==가입동기==</option>
+                                    <option value="2">카페</option>
+                                    <option value="3">SNS</option>
+                                    <option value="4">검색</option>
+                                    <option value="5">기타</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>결혼여부</th>
+                        <td>
+                            <label for="marriage">
+                                <input
+                                    type="radio"
+                                    id="marriageNo"
+                                    name="marriage"
+                                    value="no"
+                                />
+                                이혼
+                                <input
+                                    type="radio"
+                                    id="marriageYes"
+                                    name="marriage"
+                                    value="yes"
+                                />
+                                기혼
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>직업</th>
+                        <td>
+                            <label for="job">
+                                <select name="what" id="job">
+                                    <option value="1">==직업선택==</option>
+                                    <option value="2">회사원</option>
+                                    <option value="3">학생</option>
+                                    <option value="4">무직</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" style="background-color: white">
+                            <input type="submit" value="등록" />
+                            <input type="reset" value="취소" />
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    <y/bod>
 </html>
