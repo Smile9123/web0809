@@ -1,0 +1,17 @@
+@charset "utf-8";
+caption {
+    caption-side: bottom;
+}
+#phone1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#phone2 {
+    border: 3px double blue;
+    border-spacing: 10px;
+}
+
+th,
+td {
+    border: 1px dashed black;
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+#shadow1 {
+    text-shadow: 3px 5px red;
+}
+
+#shadow2 {
+    text-shadow: -10px -5px 7px green;
+}
+
+#trans1 {
+    text-transform: capitalize;
+}
+
+#trans2 {
+    text-transform: uppercase;
+}
+
+#trans3 {
+    text-transform: lowercase;
+}
+
+#space1 {
+    letter-spacing: 0;
+}
+
+#space2 {
+    letter-spacing: 0.5em;
+}
+
+#space3 {
+    letter-spacing: 10px;
+}
+
+#list1 {
+    list-style-type: disc;
+}
+
+#list2 {
+    list-style-type: circle;
+}
+
+#list3 {
+    list-style-type: square;
+}
+
+#list4 {
+    list-style-type: decimal;
+}
+
+#list5 {
+    list-style-type: decimal-leading-zero;
+}
+
+#list6 {
+    list-style-type: none;
+}
+
+#list7 {
+    list-style-type: lower-alpha;
+}
+
+#list8 {
+    list-style-type: upper-alpha;
+}
+
+#list9 {
+    list-style-image: url(../img/cat.jpg);
+}
+
+#list10 {
+    list-style-position: inside;
+}
+
+#list11 {
+    list-style-position: outside;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border: 1px solid orange;
+    border-bottom: 3px dashed red;
+    border-top: 7px double blue;
+    border-left: 15px solid yellow;
+    border-right: 5px dotted green;
+    border-bottom-width: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px dotted black;
+    padding: 10px;
+}
+
+th {
+    background-color: darkgray;
+}
+
+td {
+    text-align: right;
+    text-shadow: 2px 2px 2px hotpink;
+}
