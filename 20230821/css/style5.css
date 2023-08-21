@@ -1,1 +1,64 @@
 @charset "utf-8";
+#box1 {
+    width: 1000px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dotted black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#box2 {
+    width: 1000px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dotted black;
+}
+
+#box3 {
+    width: 1000px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dotted black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#gray {
+    background-color: #d9d9d9;
+    width: 60px;
+    text-align: center;
+}
+
+#gray2 {
+    width: 50px;
+}
+
+.a {
+    font-weight: bold;
+}
+
+.b {
+    font-style: italic;
+}
+
+#list {
+    list-style-type: decimal;
+}
+
+table {
+    width: 450px;
+    height: 200px;
+
+    border: 1px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px dotted black;
+}
+
+th {
+    height: 40px;
+}
