@@ -1,0 +1,260 @@
+시맨틱 태그 (semantic = 의미를 가진)
+-> 의미 부여를 위한 태그
+table 태그에서 thead, tbody, tfoot
+-> 영역 구분을 위해서 주로 사용 태그
+- 웹 사이트에서 HTML 소스만 보고도 이 코드의 부분이
+어느 부분인지를 알 수 있도록 함
+
+영역 구분을 위한 태그
+- p(paragraph): 문단 태그
+- div(division): 블록 요소
+ -> 기본 값이 한 줄을 차지
+ -> 변형을 시켜서 웹사이트의 특정 크기의 특정 부분만큼만 차지하도록 바꿀 수 있음(CSS)
+- span: 인라인 요소
+
+div > div O
+div > span O
+span > span O
+span > div X
+
+
+<div>: divison 블록 요소의 기본 태그
+
+<header>
+- <head> 태그와는 다른 태그
+- 가장 맨 위에 있는 부분
+- 헤더는 웹사이트에서 상단에 나오는 검색창, 로고, 메뉴 등이 들어있는 영역
+
+<nav>
+- navigation의 줄임말 
+- 메뉴들이 들어있는 부분
+- 메뉴 (gnb, snb, fnb)
+  - gnb : global navigation bar
+    : 어떤 페이지를 들어가도 항상 상단에 떠있는 메뉴
+    : 가장 메인이 되는 메뉴
+  - snb : sub navigation bar
+    : gnb의 서브 메뉴
+  - fnb : footer navigation bar
+    : 푸터(사이트 하단)에 있는 메뉴
+
+<main>
+- 메인 영역을 표현할 떄 사용
+- 핵심 컨텐츠를 담고 있는 태그
+- 전체 html 코드에서 1번만 사용 가능
+- 헤더, 푸터를 제외한 모든 컨텐츠의 상위 태그
+
+<section>
+- 섹션을 나누는 태그
+- 컨텐츠의 세부 영역을 나눌 때 사용하는 태그
+
+<article>
+- section 내부에서 더 세부 컨텐츠를 작성할 때
+- 기사, 글, 블로그, 링크 등등
+
+<aside>
+- 사이드메뉴를 작성할 때
+
+<footer>
+- 맨 아래에 있는 태그
+- 저작권, 작은 배너, fnb, 바로가기 링크 등등
+
+
+HTML: Hyper Text Markup Language
+-> 웹사이트의 구조를 작성할 때 사용하는 언어
+CSS: Cascading Style Sheet
+-> 웹사이트에 스타일을 작성할 때 사용하는 언어
+
+CSS를 작성할 때
+속성이름: 속성에 대한 값;
+
+
+CSS를 작성하는 방식
+- 내부 스타일 시트
+HTML 코드 내부에서 스타일 코드를 작성하는 방식
+<head> 태그 내부에서 <style> 태그를 생성해서
+그 태그 내부에 CSS 코드를 작성함
+-> 스타일이 간단한 경우
+-> 간단하게 테스트를 위해서 작업을 할 경우
+
+- 외부 스타일 시트 (대부분의 경우)
+HTML 파일 내부에서 CSS를 작성하는 것이 아닌
+외부에 css 파일을 만들어서 해당 파일을 HTML 파일에
+링크시키는 방식
+맨 위에 @charset "utf-8";
+<head> 태그 내부에서 <link> 태그를 생성해서
+외부 css 파일과 서로 연결을 시켜줘야 함
+
+<link rel="stylesheet" href="css파일경로">
+rel -> relation의 줄임말로 연결할 파일과 어떤관계인지
+
+
+- 태그 내부 스타일
+  태그 내부에서 style="속성: 값;"
+  태그 내부 스타일에서는 반드시 모든 스타일을
+  코드 한 줄로 작성해야 함
+
+
+사용자 에어전트 스타일시트
+User Agent Stylesheet
+= 브라우저 스타일
+- 따로 css를 설정해주지 않았는데 브라우저(크롬, 엣지, 사파리 등등)
+가 기본적으로 자동으로 적용시키는 스타일
+-> margin: 8px; 기본적으로 적용되어 있음
+
+
+선택자 (identifier)
+- 웹문서에서 어느 부분에 스타일으 부여할지 결정해주는 구문
+
+* -> 전체 선택자 (universal selector)
+- 전체에 스타일을 부여
+
+타입 선택자 (type selector)
+- 특정 태그에 스타일 부여
+
+클래스/아이디 선택자 (class, id selector)
+
+클래스 -> 그룹 이름 (여러 요소의 스타일을 한 번에 적용)
+아이디 -> 고유 이름 (1개의 요소의 스타일을 적용)
+
+클래스 선택자 -> "."+클래스이름
+아이디 선택자 -> "#"+아이디이름
+
+클래스와 아이디는 동시에 줄 수 있음
+클래스도 여러 클래스를 줄 수 있음
+
+아이디는 한 요소에 대해서 여러 아이디를 가질 수 있음
+한 아이디는 반드시 한 요소에만 작성해야 함
+
+그룹 선택자 -> 여러 선택자에 대해서 동일한 스타일을 부여할 때
+
+
+스타일 우선순위
+-> 스타일이 중복되서 들어가서 충돌이 날 경우
+   어떤 스타일이 우선이 되느냐
+
+
+우선순위 높음
+
+(내부, 외부) 스타일 시트의 !important
+태그 내부 스타일
+아이디 스타일
+클래스 스타일(아래쪽)
+클래스 스타일(위쪽)
+타입 스타일(아래쪽)
+타입 스타일(위쪽)
+
+우선순위 낮음
+
+
+
+텍스트를 위한 스타일
+
+font-family -> 글꼴을 바꾸는 설정
+기본적으로는 한국어 PC 기본 값인 맑은 고딕으로 설정
+
+font-family를 이용해서 글꼴을 바꾸거나 아니면
+여러 글꼴 설정해서 해당 글꼴이 없는 경우를 대비하여
+폰트를 미리 설정할 수 있음
+
+만약에 폰트 이름에 띄어쓰기가 있는 경우
+반드시 폰트 이름을 설정할 때 "맑은 고딕" 처럼 큰 따옴표를
+넣어주어야 함
+
+
+font-size -> 글씨의 크기를 조절
+- px 방식 (pixel): 컴퓨터의 화소 단위
+- 키워드 방식: 크기를 직접 지정하는 것이 아닌
+미리 지정된 크기 키워드
+(xx-small, x-small, small, medium, large, x-large, xx-large)
+- pt 방식 (point): 일반적인 문서에서 사용하는 단위
+- em 방식: 대문자 M의 너비가 1em (기준 위치가 부모 태그)
+- ex 방식: 소문자 x의 높이가 1ex
+- rem 방식: em방식인데 기준이 되는 위치가 body 태그의 1em
+
+
+font-style: 이탤릭체를 주는 속성 (i태그, em태그)
+italic, oblique를 주면 둘 다 이탤릭체가 됨
+normal을 넣으면 기본 글씨가 됨
+italic -> 애초에 기울어진 글씨
+oblique -> 기본 글씨를 자체적으로 기울인 경우
+
+
+font-weight: 굵기를 주는 속성 (b, strong 태그)
+- 키워드 방식 (lighter, normal, bold, bolder)
+- 숫자 방식 (100단위, 100, 200, ..., 900)
+lighter = 100
+normal = 400
+bold = 700
+bolder = 900
+
+
+외부 폰트 가져오기
+1. 웹에서 제공하는 폰트 사용하기
+구글 폰트 (fonts.google.com)
+-> Language 에서 Korean 선택
+-> 폰트를 선택
+-> 아래로 내려서 Style 부분의 Select 누르기
+-> 우상단의 View Selected Family 클릭
+-> @import 선택
+-> <style> 태그 사이에 있는 @import로 시작하는 코드만 복사
+-> CSS 파일의 @charset 아래에 붙여넣기
+
+2. 다운로드 받은 폰트를 사용하기
+일반적으로 css 코드에서 가장 아래에 작성
+@font-face {
+    font-family: 이 폰트에 대해서 지정해줄 이름;
+    src: url(이 폰트의 경로) format(이 폰트의 형태),
+         url(이 폰트의 경로) format(이 폰트의 형태);
+}
+
+woff, woff2 -> woff
+ttf -> truetype
+otf -> opentype
+svg -> svg
+eot -> embedded-opentype
+
+
+텍스트 색상 바꾸기
+color
+* 키워드: red, blue, orange
+* RGB값 지정: rgb(0~255, 0~255, 0~255)
+* RGBA값 지정: rgba(0~255, 0~255, 0~255, 0~1사이의 소수점)
+  Red, Green, Blue, Alpha (투명도 조절)
+* HSL값 지정: hsl(0~360, 0~100%, 0~100%)
+* HSLA값 지정: hsal(0~360, 0~100%, 0~100%, 0~1사이의 소수점)
+  Hue, Saturation, Light (색상, 채도, 명도)
+    + Alpha (투명도)
+* Hexcode 지정: 0~9,a~f 까지의 문자를 6개
+
+
+텍스트 정렬하기 -> 텍스트의 가로 방향 위치
+text-align 속성 사용
+start = left -> 현재 텍스트 줄의 시작 위치
+end = right -> 현재 텍스트 줄의 끝 위치
+center -> 현재 텍스트 줄의 가운데 위치
+justify -> 양쪽 정렬
+match-parent -> 태그 내부에 태그가 있는 경우,
+자식 태그는 부모 태그의 text-align 속성을 따르게 됨
+
+
+줄의 높이 (line-height) -> 텍스트의 세로 방향 위치를 조절 가능
+기본 값으로는 줄의 높이 16px
+- px 단위
+- 배수 단위 (% 단위)
+
+
+선 추가하기 (text-decoration)
+- 밑줄 underline (u 태그)
+- 취소선 line-through (s 태그)
+- 윗줄 overline
+- 선 없애는 none
+(a 태그(링크)에서 선을 없앨 때 주로 text-decoration: none 사용)
+
+-> 추가로 선을 꾸밀 수 있는 속성을 추가할 수 있음
+- double 이중선
+- dashed 파선
+- dotted 점선
+- solid 실선
+- wavy 파동선
+
+-> 색깔

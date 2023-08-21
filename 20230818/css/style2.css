@@ -1,0 +1,110 @@
+@charset "utf-8";
+#font1 {
+    font-family: 굴림, 돋움, "맑은 고딕";
+}
+
+#font2 {
+    font-family: "Gasoek One";
+}
+
+#font3 {
+    font-family: "Nanum Gothic";
+}
+
+#font4 {
+    font-family: "Nanum Gothic";
+    font-weight: 700;
+}
+
+#font5 {
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#font6 {
+    font-family: "pretendard";
+    font-weight: 900;
+}
+
+#font7 {
+    font-family: "pretendard";
+    font-weight: 900;
+}
+
+#color1 {
+    color: rgb(128, 30, 200);
+}
+
+#color2 {
+    color: rgba(128, 30, 200, 0.5);
+}
+
+#color3 {
+    color: hsl(180, 50%, 50%);
+}
+
+#color4 {
+    color: hsla(180, 50%, 50%, 0.5);
+}
+
+#color5 {
+    color: #abcdef;
+}
+
+#align1 {
+    text-align: start;
+}
+
+#align2 {
+    text-align: end;
+}
+
+#align3 {
+    text-align: center;
+}
+
+#align4 {
+    text-align: justify;
+}
+
+#align5 {
+    text-align: match-parent;
+}
+
+#height {
+    line-height: 24px;
+}
+
+#height2 {
+    line-height: 300%;
+}
+
+#height3 {
+    line-height: 4;
+}
+
+#deco1 {
+    text-decoration: underline;
+}
+
+#deco2 {
+    text-decoration: line-through;
+}
+
+#deco3 {
+    text-decoration: overline;
+}
+
+#deco4 {
+    text-decoration: none;
+}
+
+#deco5 {
+    text-decoration: underline wavy red;
+}
+
+@font-face {
+    font-family: pretended;
+    src: url(../fonts/PretendardVariable.ttf) format("truetype");
+    src: url(../fonts/PretendardVariable.woff2) format("woff");
+}
