@@ -1,4 +1,75 @@
 form
 텍스트 입력 할 때 input
 -> 세로 줄을 조절 할 수 없음
-textarea
+textarea 태그
+- input 태그와 다르게 엔터(줄 바꿈)을 할 수 있음
+- 닫는 태그 (단독 태그 X)
+
+* name 속성: 서버에 데이터를 전송 할 때 식별자
+* id 속성: label의 for와 쌍을 맺어줘야 하는 속성
+* cols 속성: columns 가로 길이
+* rows 속성: rows 세로 길이
+지정한 줄 크기가 넘어가면 자동으로 스크롤바가 생성됨
+textarea에서는 기본 값을 설정할 때 태그 사이에 값을 입력하면 됨
+
+
+
+드롭다운 drop + down
+목록형 중에서 선택이 가능한 형태
+select-option 태그
+
+select 태그에 multiple 속성 (단독속성)
+-> 원래 1개만 선택가능했던 select가
+여러개를 선택할 수 있도록 바뀜
+-> ctrl 키를 누르면서 여러개를 선택
+
+option 태그에 selected 속성 (단독속성)
+-> 기본 값이 설정
+
+
+input 타입이 text인데 드롭다운인 형태
+-> list 속성을 input 태그에 추가
+-> list 속성 값을 datalist의 id와 동일하게 설정
+
+select와는 다르게 datalist는 value 속성 기준
+select -> option 태그 내부의 값이 설정
+datalist -> option 태그의 value 속성이 값으로 설정됨
+value 값들 중에서 한 글자만 쓰더라도 자동 완성이 됨
+
+제출하기를 눌렀을 때 원래는 서버로 데이터가 전송이 됨
+form 태그의 기본 method 속성 설정이 get
+-> 보안 설정이 되지 않은 서버로의 데이터 전송
+-> 데이터를 전송할 때에는 name 속성이 있어야지만 전송이 됨
+
+input 태그의 type 속성이 button 인 것
+vs
+button 태그의 type 속성이 button 인 것
+
+1. input 태그는 단독태그 vs button 태그는 닫는 태그가 있음
+2. 버튼 내부의 글씨를 바꿀 떄에는
+input 태그는 value 속성을 사용
+button 태그는 태그 사이에 텍스트를 집어 넣음
+
+
+
+
+input 태그에서 반드시 이 칸은 작성해야 한다 (필수)를 지정하기
+- 필수 (required) -> 단독 속성
+작성을 해야지만 폼을 제출할 수 있음
+
+input 태그에서 수정을 할 수 없게 하는 속성
+- 읽기 전용 (readonly) -> 단독 속성
+수정/입력을 할 수 없음
+readonly 대신에 readonly="true"
+-> value를 이용해서 미리 값을 설정 해주어야 함
+
+input 태그가 딱 봐도 수정할 수 없게 생긴 것
+- 이용 불가능 (disabled) -> 단독 속성
+
+input 태그에서 폼 창을 처음 들어왔을 때
+자동으로 커서가 해당 input 칸으로 이동하게 해주는 기능
+- 자동 포커스 (autofocus) -> 단독 속성
+
+required를 가진 태그에서 오류 메시지를 변경할 수 있음
+oninvalid="this.setCustomValidity('텍스트')"
+
