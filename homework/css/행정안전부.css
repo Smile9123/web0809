@@ -1,1 +1,27 @@
 @charset "utf-8";
+* {
+    margin: 0;
+    padding-top: 0;
+}
+
+#container {
+    width: 1619px;
+    margin: 0 outo;
+}
+
+header {
+    width: 126.4px;
+    height: 37.8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo1 {
+    float: left;
+}
+
+#img {
+    float: left;
+}
+#headNv {
+}
