@@ -1,0 +1,39 @@
+@charset "utf-8";
+p {
+    display: inline;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    float: left;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.box4 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
