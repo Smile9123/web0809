@@ -1,27 +1,106 @@
 @charset "utf-8";
 * {
     margin: 0;
-    padding-top: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+#all {
+    width: 1600px;
+    margin: 0 auto;
 }
 
-#container {
-    width: 1619px;
-    margin: 0 outo;
+#firsth {
+    height: 37.594px;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
-
-header {
-    width: 126.4px;
-    height: 37.8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 #logo1 {
-    float: left;
-}
-
-#img {
+    margin-top: 10px;
     float: left;
 }
 #headNv {
+    margin-top: 10px;
+    padding-left: 10px;
+    float: left;
+    font-size: small;
+}
+.topMenu {
+    margin-top: 10px;
+    padding-left: 40px;
+    float: left;
+
+    font-size: small;
+}
+#topRightImg {
+    margin-top: 5px;
+    padding-right: 5px;
+    float: right;
+}
+#topRightImg2 {
+    margin-top: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+#section1 {
+    height: 489.547px;
+}
+#secondh {
+    height: 80.797px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#logo4 {
+    margin-top: 20px;
+    float: left;
+}
+#list1Padding {
+    padding-left: 70px;
+}
+.list1 {
+    margin-top: 30px;
+    padding-left: 50px;
+    float: left;
+
+    font-size: large;
+    font-weight: bold;
+}
+#searchBox {
+    margin-top: 30px;
+    float: left;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+#headerRight {
+    background-color: beige;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 6px;
+    float: right;
+}
+#menuIcon {
+    margin-top: 25px;
+    padding: 5px;
+    float: right;
+}
+#section1Img {
+    width: 80%;
+    float: left;
+}
+#allTable {
+    background-color: #d9d9d9;
+    width: 20%;
+    height: 489.547px;
+    float: left;
+}
+#table {
+    height: 489.547px;
+}
+.tableBox {
+    width: 10%;
+    height: 10%;
+    background-color: lightpink;\
+    padding: 5px ;
 }
