@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+header {
+    height: 120px;
+}
+
+#logo {
+    width: 20%;
+    height: 120px;
+    float: left;
+}
+
+#logoImg {
+    margin: 34px;
+}
+
+#search {
+    width: 45%;
+    height: 120px;
+    float: left;
+}
+
+#searchBox {
+    position: relative;
+    height: 60px;
+    border: 5px solid #003964;
+    background-color: white;
+    margin: 25px 0;
+}
+
+#searchInput {
+    position: absolute;
+    height: 45px;
+    width: 80%;
+    margin: 7.5px 15px;
+    font-size: 120%;
+    border: none;
+}
+
+#searchImg {
+    position: absolute;
+    right: 15px;
+    top: 11.5px;
+}
+
+#sub {
+    width: 35%;
+    height: 120px;
+    float: left;
+}
+
+#hamburger {
+    clear: left;
+}
+
+#sub > span {
+    display: block;
+    float: right;
+    height: 30px;
+    margin: 45px 20px;
+}
+
+main {
+    height: 780px;
+    background-color: aquamarine;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    height: 780px;
+    background-color: #1a2e48;
+    color: white;
+}
+
+aside > nav > ul {
+    list-style-type: none;
+    padding-top: 14px;
+    padding-bottom: 110px;
+}
+
+aside > nav > ul > li {
+    font-size: 20px;
+    height: 82px;
+    line-height: 82px;
+    padding-left: 40px;
+}
+
+#info {
+    width: 960px;
+    float: right;
+}
+
+#info > article {
+    width: 400px;
+    height: 180px;
+    padding: 40px;
+    float: left;
+}
+#info > article > div > a {
+    display: block;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+#info6 > div {
+    height: 130px;
+}
+
+#info6 > div > img {
+    width: 480px;
+    height: 130px;
+}
+
+.rightInfo {
+    margin-left: 40px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+#info > article > h2 {
+    font-weight: normal;
+    font-size: 250%;
+}
+
+.bold {
+    font-weight: bold;
+}
+#info1 {
+    background-color: orange;
+}
+
+#info2 {
+    background-color: orangered;
+}
+
+#info3 {
+    background-color: darkcyan;
+    color: white;
+}
+
+#info4 {
+    background-color: slateblue;
+    color: white;
+}
+
+#info5 {
+    background-color: darkgray;
+    color: white;
+}
+
+#info1 > div > a,
+#info2 > div > a {
+    color: black;
+}
+#info3 > div > a,
+#info4 > div > a,
+#info5 > div > a {
+    color: white;
+}
+
+#banner {
+    float: left;
+    width: calc(100% - 1260px);
+    height: 780px;
+    background-color: chartreuse;
+}
+
+#notice > section {
+    width: calc(50% - 41px);
+    height: 90px;
+    padding: 20px;
+    float: left;
+}
+
+#notice > section > div {
+    float: left;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#notice > section > ul {
+    list-style-type: none;
+    float: left;
+}
+
+#notice > section > ul > li {
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+
+#notice1,
+#notice3 {
+    border-right: 1px solid gray;
+}
+
+#notice1,
+#notice2 {
+    border-bottom: 1px solid gray;
+}
+
+#footer {
+    background-color: black;
+}
+
+footer > div > div > ul {
+    list-style-type: none;
+}
+
+footer > div > div > ul > li {
+    display: inline-block;
+}
+
+#footerLeft {
+    height: 141px;
+    padding-top: 40px;
+    float: left;
+}
+
+#footerRight {
+    height: 141px;
+    padding-top: 40px;
+    float: right;
+}
+
+#tos {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.footerLi {
+    padding-left: 15px;
+}
+#footerLbold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#address {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#address2 {
+    padding-left: 20px;
+}
+
+#sns {
+    padding-right: 40px;
+}
+
+.icon {
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+#select1 {
+    font-weight: bold;
+    width: 160px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+#badge {
+    float: right;
+    padding-right: 40px;
+}
+
+#badgeIcon1 {
+    width: 80px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#badgeIcon2 {
+    width: 80px;
+    height: 33.67px;
+    padding-left: 20px;
+    padding-top: 20px;
+}

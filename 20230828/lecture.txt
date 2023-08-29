@@ -1,0 +1,72 @@
+header (height 120px)
+#logo (width 20%)
+    -> 이미지 1개
+이미지 높이 52px
+전체 높이 120px
+여백의 높이 = 120 - 52 = 68px
+#search (width 45%)
+    -> input 태그
+    -> 돋보기 이미지
+    #searchBox (height 60 + border 10)
+    전체 높이 120px
+    box의 높이 70px
+    여백의 높이 = 50px
+    #searchImg (height: 37px)
+    box의 높이 60px
+    height 37px
+    여백의 높이 = 23px
+#sub (width 35%)
+    -> - + 버튼
+    -> 누리집 안내 지도 글씨
+    -> ENGLISH 글씨
+    -> 햄버거 버튼
+
+
+main (height 780px)
+aside (width 300px)
+- nav > ul > li (height 82px) * 8
+-> aside 컨텐츠의 높이 656px
+-> 위쪽 padding 14px
+-> 아래쪽 padding 110px
+
+#info 의 article
+-> width 480px
+-> height 260px
+각각의 배경은 단일 색상으로 처리
+
+첫 5개의 article은
+h2 태그로 제목
+a 태그로 내부 메뉴
+
+마지막 article은 위 아래로 2개의 사진
+
+
+
+#notice
+section 너비 50%
+컨텐츠 높이 90px
+padding 20px
+
+float: left;
+- div -> 제목
+- ul -> 글
+
+
+footer 높이 181px
+컨텐츠 높이 141px
+padding-top 높이 40px
+
+#footerLeft -> float: left
+#footerRight -> float: footerRight
+
+#tos -> 일반 텍스트
+  - ul > li 이용해서 구현
+#address -> 일반 텍스트
+  - p 태그 이용해서 구현
+
+#sns
+  - img 태그 이용해서 sns 아이콘
+  - select 태그 이용해서 문체부와 소속기관 드롭다운
+  - button 태그 이용해서 바로가기 
+#badge
+  - img 태그 이용해서 2개의 뱃지
