@@ -1,0 +1,99 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flag {
+    margin: 20px;
+}
+
+#france {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background: repeating-linear-gradient(
+        to right,
+        #051440,
+        #051440 100px,
+        white 100px,
+        white 200px,
+        #ec1920 200px,
+        #ec1920 300px
+    );
+}
+
+#bang {
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    background: repeating-radial-gradient(
+        circle at 40% 50%,
+        #f42a41,
+        #f42a41 30%,
+        #006a4e 30%,
+        #006a4e 100%
+    );
+}
+
+#america {
+    width: 152px;
+    height: 108.66px;
+    background-color: #002664;
+    position: relative;
+    top: 129px;
+}
+
+#america > p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 11px;
+    letter-spacing: 8px;
+}
+
+#america2 {
+    border: 1px solid black;
+    width: 380px;
+    height: 200px;
+    background: repeating-linear-gradient(
+        to bottom,
+        #bf0a30,
+        #bf0a30 15.38px,
+        white 15.38px,
+        white 30.76px
+    );
+}
+
+#usa1 {
+    border: 1px solid black;
+    width: 152px;
+    height: 200px;
+    margin-right: 0;
+    float: left;
+    background: repeating-linear-gradient(
+        to bottom,
+        #002664,
+        #002664 107.66px,
+        white 107.66px,
+        white 123.04px,
+        #bf0a30 123.04px,
+        #bf0a30 138.42px,
+        white 138.42px,
+        white 153.8px,
+        #bf0a30 153.8px,
+        #bf0a30 169.18px,
+        white 169.18px,
+        white 184.56px,
+        #bf0a30 184.56px,
+        #bf0a30 200px
+    );
+}
+
+#usa2 {
+    border: 1px solid black;
+    width: 228px;
+    height: 200px;
+    margin-left: 0;
+    float: left;
+}
