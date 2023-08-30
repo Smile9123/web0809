@@ -1,0 +1,95 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#grad1 {
+    background: linear-gradient(to right bottom, blue, white);
+}
+
+#grad2 {
+    background: linear-gradient(240deg, red, white);
+}
+
+#grad3 {
+    background: linear-gradient(
+        to right bottom,
+        blue,
+        cornflowerblue 20%,
+        white
+    );
+}
+
+#grad4 {
+    background: radial-gradient(white, orange, red);
+}
+
+#grad5 {
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(white, orange, red);
+}
+
+#grad6 {
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle, white, orange, red);
+}
+
+#grad7 {
+    background: radial-gradient(at 20% 20%, white, orange, red);
+}
+
+#grad8 {
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle at 20% 20%, white, orange, red);
+}
+
+#grad9 {
+    background: radial-gradient(closest-side at 20% 20%, white, skyblue, blue);
+}
+
+#grad10 {
+    background: radial-gradient(farthest-side at 20% 20%, white, skyblue, blue);
+}
+
+#grad11 {
+    background: repeating-linear-gradient(white, blue 50px);
+}
+
+#grad12 {
+    background: repeating-radial-gradient(yellow, orange 20%);
+}
+
+#grad13 {
+    width: 200px;
+    height: 100px;
+    background: repeating-radial-gradient(
+        farthest-side circle at 30% 20%,
+        yellow,
+        orange 20%
+    );
+}
+
+#grad14 {
+    background: repeating-linear-gradient(
+        to right,
+        yellow,
+        yellow 25px,
+        red 25px,
+        red 50px
+    );
+}
+
+#grad15 {
+    background: repeating-radial-gradient(white, white 10%, gray 10%, gray 30%);
+}

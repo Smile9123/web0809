@@ -8,11 +8,86 @@
 div {
     width: 100px;
     height: 100px;
-    margin: 100px;
+    margin: 10px;
 }
 
 #bg1 {
     background-color: aquamarine;
     padding: 10px;
     border: 5px dotted black;
+}
+
+#bg2 {
+    background-color: aquamarine;
+    padding: 10px;
+    border: 5px dotted black;
+    background-clip: padding-box;
+}
+
+#bg3 {
+    background-color: aquamarine;
+    padding: 10px;
+    border: 5px dotted black;
+    background-clip: content-box;
+}
+.bgImg {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url("../img/cat.jpg");
+}
+
+#bg4 {
+    background-repeat: repeat-x;
+}
+
+#bg5 {
+    background-repeat: no-repeat;
+}
+
+#bg6 {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#bg7 {
+    background-repeat: no-repeat;
+    background-position: left 80%;
+}
+
+#bg8 {
+    background-attachment: scroll;
+}
+
+/* body {
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+} */
+
+.bgImg2 {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    background-image: url(../img/cat.jpg);
+    background-repeat: no-repeat;
+}
+#bg9 {
+    background-size: contain;
+}
+
+#bg10 {
+    background-size: cover;
+}
+
+#bg11 {
+    background-size: 100% 100%;
+}
+
+#bg12 {
+    background-size: 50%;
+}
+
+#bg13 {
+    background-size: 200px;
 }
