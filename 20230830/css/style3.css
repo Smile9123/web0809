@@ -6,12 +6,13 @@
 
 .flag {
     margin: 20px;
+    border: 1px solid black;
 }
 
 #france {
     width: 300px;
     height: 200px;
-    border: 1px solid black;
+
     background: repeating-linear-gradient(
         to right,
         #051440,
@@ -66,7 +67,7 @@
 }
 
 #usa1 {
-    border: 1px solid black;
+    border: none;
     width: 152px;
     height: 200px;
     margin-right: 0;
@@ -90,10 +91,25 @@
     );
 }
 
+#usa1 > p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 11px;
+    letter-spacing: 8px;
+}
 #usa2 {
     border: 1px solid black;
     width: 228px;
     height: 200px;
     margin-left: 0;
     float: left;
+    border: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        #bf0a30,
+        #bf0a30 15.38px,
+        #ffff 15.38px,
+        #ffff 30.76px
+    );
 }
