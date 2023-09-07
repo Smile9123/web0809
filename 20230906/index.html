@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <nav class="navi">
+            <ul>
+                <li><a href="">회사 소개</a></li>
+                <li><a href="">제품 소개</a></li>
+                <li><a href="">게시판</a></li>
+                <li><a href="">오시는 길</a></li>
+            </ul>
+        </nav>
+        <form action="" id="contact">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="username">이름</label>
+                        <input type="text" id="username" name="username" required>
+                    </li>
+                    <li>
+                        <label for="userphone">연락처</label>
+                        <input type="tel" id="userphone" name="userphone" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>문의 선택</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="ask" id="ask_p">
+                        <label for="ask_p">제품 문의</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="ask" id="ask_d">
+                        <label for="ask_d">일반 문의</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">제출</button>
+        </form>
+    </div>
+</body>
+</html>

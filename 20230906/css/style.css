@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.navi {
+    width: 720px;
+    height: 60px;
+    border-bottom: 3px solid black;
+}
+
+.navi > ul {
+    list-style-type: none;
+    margin: 40px;
+}
+
+.navi > ul > li {
+    float: left;
+    width: 140px;
+    padding: 10px;
+}
+
+.navi a:link,
+.navi a:visited {
+    display: block;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navi a:focus,
+.navi a:hover {
+    background-color: #333;
+    color: white;
+}
+
+#contact {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+#contact > fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#contact ul {
+    list-style-type: none;
+}
+
+#contact ul li {
+    line-height: 30px;
+    padding: 5px 10px;
+}
+
+#contact input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}

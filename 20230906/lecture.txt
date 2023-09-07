@@ -1,0 +1,43 @@
+트랜지션(전환 효과), 애니메이션
+-> CSS3에 추가된 기능
+-> CSS를 이용한 시각 효과
+
+transform 변형 속성에 있는 변형 함수를 이용해서 구현
+- translate (이동) -> x, y, xy (px 단위)
+- scale (확대/축소) -> x, y, xy (% 단위, 배율단위) (-로 하면 뒤집힘)
+- rotate (회전)
+ -> 2차원 회전 (각도 단위로 돌림) (+ 시계방향, - 반시계방향)
+ -> 3차원 회전 (축을 기준으로 회전)
+- skew (왜곡) -> x, y, xy (각도 단위)
+
+transform-origin: x좌표 y좌표
+이동/확대/회전/변형이 되는 기준점
+
+
+
+트랜지션 전환 효과에 속성
+
+transition-property: 전환이 될 CSS 속성을 결정해주는 속성
+-> all (모든 CSS 속성에 전환을 적용)
+   none (속성 전환을 하지 않는다)
+   특정 CSS 속성 (해당 속성만 전환한다)
+
+transition-duration: 전환이 되는 시간을 결정하는 속성 (초, 밀리초 단위로 설정)
+-> 1s, 2s, 0.5s, 500ms : 숫자+s, ms
+
+transition-timing-function: 전환하는 속도 곡선을 지정할 수 있음
+- ease (기본 값): 빨라졌다가 느려지는 효과
+- ease-in: 점점 빨라지는 효과
+- ease-out: 점점 느려지는 효과
+- ease-in-out: ease와 비슷하지만 약간 차이
+- linear: 전부 동일한 속도
+- cubic-bezier: 진행도 값을 직접 지정할 수 있음
+(https://cubic-bezier.com 사이트에 들어가서 미리보기를 해볼 수 있음)
+
+transition-delay: 지정 시간만큼 기다렸다가 전환이 시작됨 (딜레이)
+-> 초, 밀리초 단위로 지정할 수 있음
+
+
+위의 4가지 속성을 하나로 합친 속성
+transition: <property> <duration> <timing-function> <delay>
+transition: all 2s ease 3s;
