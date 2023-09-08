@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --count: 16;
+    --radius: 40;
+    --bigRadius: 200;
+}
+
+body {
+    background-color: black;
+}
+
+#wrap {
+    width: calc(var(--bigRadius) * 2px);
+    height: calc(var(--bigRadius) * 2px);
+    margin: 50px auto;
+    position: relative;
+}
+
+.box {
+    width: calc(var(--radius) * 2px);
+    height: calc(var(--radius) * 2px);
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: 200px 200px;
+    /*
+    top:
+    left:
+
+    transform-orign:
+    transform: rotate:
+
+    animation:
+    */
+}
+
+.box :nth-child(1) {
+}
+
+.box :nth-child(2) {
+}
+
+.box :nth-child(3) {
+}
+
+.box :nth-child(4) {
+}
+
+.box :nth-child(5) {
+}
+
+.box :nth-child(6) {
+}
+
+.box :nth-child(7) {
+}
+
+.box :nth-child(8) {
+}
+
+.box :nth-child(9) {
+}
+
+.box :nth-child(10) {
+}
+
+.box :nth-child(11) {
+}
+
+.box :nth-child(12) {
+}
+
+.box :nth-child(13) {
+}
+
+.box :nth-child(14) {
+}
+
+.box :nth-child(15) {
+}
+
+.box :nth-child(16) {
+}
+
+@keyframes circle {
+    /* 너비, 높이, 투명도, 테두리색 */
+}
