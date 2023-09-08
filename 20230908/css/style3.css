@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 800px;
+    margin: 30px auto;
+}
+
+img {
+    width: 190px;
+    height: 190px;
+    display: block;
+    margin: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px 2px black;
+}
+
+#def {
+    animation: rotateImg 2.5s infinite;
+}
+
+#pers {
+    animation: rotateImg2 2.5s infinite;
+}
+
+@keyframes rotateImg {
+    from {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(-180deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes rotateImg2 {
+    from {
+        transform: perspective(200px) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(200px) rotateY(-180deg);
+    }
+    to {
+        transform: perspective(200px) rotateY(-360deg);
+    }
+}

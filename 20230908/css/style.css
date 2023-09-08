@@ -1,22 +1,65 @@
 @charset "utf-8";
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 div {
-  width: 100px;
-  height: 100px;
-  margin: 30px;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
 }
 
 #box1 {
-  background-color: greenyellow;
-  border: 1px solid transparent;
+    background-color: greenyellow;
+    border: 1px solid transparent;
 }
 
 #box1:hover {
-  border: 1px solid black;
-  border-radius: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#box2 {
+    background-color: greenyellow;
+    border: 1px solid transparent;
+}
+
+#box2:hover {
+    animation-name: shape;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+
+#box3 {
+    background-color: aquamarine;
+    border: 1px soild transparent;
+}
+
+#box3:hover {
+    animation-name: shape;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+#box4 {
+    background-color: aqua;
+    border: 1px solid transparent;
+}
+
+#box4:hover {
+    animation: shape 1.5s infinite alternate-reverse;
+}
+
+@keyframes shape {
+    from {
+        border: 1px solid transparent;
+        border-radius: 0px;
+    }
+    to {
+        border: 1px solid transparent;
+        border-radius: 50px;
+    }
 }
