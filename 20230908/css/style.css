@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+#box1 {
+  background-color: greenyellow;
+  border: 1px solid transparent;
+}
+
+#box1:hover {
+  border: 1px solid black;
+  border-radius: 50%;
+}
