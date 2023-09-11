@@ -35,6 +35,8 @@ body {
     top: 0px;
 
     left: calc((var(--bigRadius) - var(--radius)) * 1px);
+
+    animation: circle 4s ease-in calc(4 / var(--count) * var(--p) * 1s) infinite;
     /*
     top:
     left:
@@ -44,54 +46,6 @@ body {
 
     animation:
     */
-}
-
-.box :nth-child(1) {
-}
-
-.box :nth-child(2) {
-}
-
-.box :nth-child(3) {
-}
-
-.box :nth-child(4) {
-}
-
-.box :nth-child(5) {
-}
-
-.box :nth-child(6) {
-}
-
-.box :nth-child(7) {
-}
-
-.box :nth-child(8) {
-}
-
-.box :nth-child(9) {
-}
-
-.box :nth-child(10) {
-}
-
-.box :nth-child(11) {
-}
-
-.box :nth-child(12) {
-}
-
-.box :nth-child(13) {
-}
-
-.box :nth-child(14) {
-}
-
-.box :nth-child(15) {
-}
-
-.box :nth-child(16) {
 }
 
 @keyframes circle {
