@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color: dodgerblue;
+    --color2: white;
+}
+
+div {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    color: var(--color2);
+    text-align: center;
+    line-height: 100px;
+}
+
+div:nth-child(1) {
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+div:nth-child(2) {
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+div:nth-child(3) {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--color);
+}
+
+div:nth-child(4) {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid var(--color);
+}
+
+div:nth-child(5) {
+    width: 0;
+    height: 0;
+
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid var(--color);
+}
+
+div:nth-child(6) {
+    width: 0;
+    height: 0;
+
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid var(--color);
+}
+
+div:nth-child(7) {
+    width: 0;
+    height: 0;
+
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid var(--color);
+    border-left: 100px solid var(--color);
+}
+
+div:nth-child(8) {
+    width: 0;
+    height: 0;
+
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid var(--color);
+}
+
+div:nth-child(9) {
+    width: 100px;
+    height: 0;
+
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--color);
+}
+
+div:nth-child(10) {
+    width: 150px;
+    height: 100px;
+    background-color: var(--color);
+    transform: skew(20deg);
+}

@@ -43,8 +43,48 @@ body {
     border-top: 3px solid var(--main-clr);
     border-right: 3px solid var(--main-clr);
     border-radius: 50%;
+    animation: rotateC 2s linear infinite;
 }
 
 span {
-    transform-origin: 50% 50%;
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+
+    width: 50%;
+    height: 4px;
+    transform-origin: left;
+    animation: rotateO 2s linear infinite;
+}
+
+span::before {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    right: -8px;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-clr);
+}
+
+@keyframes rotateC {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateO {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(405deg);
+    }
 }
