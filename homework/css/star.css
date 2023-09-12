@@ -19,17 +19,15 @@ div {
     width: 0;
     height: 0;
     position: relative;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid var(--color1);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid var(--color1);
 }
 
-.star::before {
+.star::after {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid pink;
+    border-top: 100px solid var(--color1);
 }
