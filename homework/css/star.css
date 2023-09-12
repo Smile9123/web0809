@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: dodgerblue;
+}
+
+div {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.star {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid var(--color1);
+}
+
+.star::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid pink;
+}
