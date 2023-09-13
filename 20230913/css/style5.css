@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    li {
+        float: left;
+    }
+}

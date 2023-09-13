@@ -18,6 +18,9 @@ body {
     width: 282px;
     height: 80px;
     margin: 200px auto;
+
+    display: flex;
+    align-items: center;
 }
 
 .bar {
@@ -27,14 +30,44 @@ body {
     margin-right: 18px;
     border-radius: 6px;
     background-color: var(--background2);
-    animation: sizechange 3s delay infinite;
+    animation: wave 0.75s ease-in-out infinite alternate;
 }
 
 #wrap .bar:last-child {
     margin-right: 0;
 }
 
-@keyframes sizechange {
+#wrap .bar:nth-child(1),
+#wrap .bar:nth-child(10) {
+    background-color: purple;
+    animation-delay: 1s;
+}
+
+#wrap .bar:nth-child(2),
+#wrap .bar:nth-child(9) {
+    background-color: crimson;
+    animation-delay: 0.8s;
+}
+
+#wrap .bar:nth-child(3),
+#wrap .bar:nth-child(8) {
+    background-color: deeppink;
+    animation-delay: 0.6s;
+}
+
+#wrap .bar:nth-child(4),
+#wrap .bar:nth-child(7) {
+    background-color: orange;
+    animation-delay: 0.4s;
+}
+
+#wrap .bar:nth-child(5),
+#wrap .bar:nth-child(6) {
+    background-color: gold;
+    animation-delay: 0.2s;
+}
+
+@keyframes wave {
     from {
         height: 80px;
     }
