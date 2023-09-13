@@ -8,20 +8,28 @@
 @media screen and (max-width: 768px) {
     #wrap {
         display: grid;
-        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #wrap {
-        display: gird;
-        grid-template-columns: repeat(3 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 1025px) {
     #wrap {
-        display: gird;
-        grid-template-columns: repeat(4 1fr);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
+}
+
+div > div:nth-child(odd) {
+    background-color: yellow;
+}
+
+div > div:nth-child(even) {
+    background-color: green;
 }
