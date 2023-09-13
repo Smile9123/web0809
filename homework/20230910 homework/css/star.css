@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: dodgerblue;
+}
+
+div {
+    margin: 100px;
+}
+
+#hexagram {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--color1);
+    position: relative;
+}
+
+#hexagram::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid var(--color1);
+
+    position: absolute;
+    top: 30px;
+    left: -50px;
+}
+
+#hexagon {
+    width: 100px;
+    height: 57.73px;
+    background-color: var(--color1);
+    position: relative;
+}
+
+#hexagon::before {
+    content: "";
+    width: 100px;
+    height: 57.73px;
+    background-color: var(--color1);
+    position: absolute;
+    transform: rotate(60deg);
+}
+
+#hexagon::after {
+    content: "";
+    width: 100px;
+    height: 57.73px;
+    background-color: var(--color1);
+    position: absolute;
+    transform: rotate(120deg);
+}
