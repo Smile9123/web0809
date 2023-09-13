@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: black;
+    --background2: white;
+}
+
+body {
+    background-color: var(--background);
+}
+
+#wrap {
+    width: 282px;
+    height: 80px;
+    margin: 200px auto;
+}
+
+.bar {
+    width: 12px;
+    height: 80px;
+    float: left;
+    margin-right: 18px;
+    border-radius: 6px;
+    background-color: var(--background2);
+    animation: sizechange 3s delay infinite;
+}
+
+#wrap .bar:last-child {
+    margin-right: 0;
+}
+
+@keyframes sizechange {
+    from {
+        height: 80px;
+    }
+    to {
+        height: 2px;
+    }
+}
