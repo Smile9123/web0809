@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>국립국어원</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo">
+                    <img
+                        id="logoImg"
+                        src="img/logo.png"
+                        alt="국립국어원 로고"
+                    />
+                </div>
+                <div id="search">
+                    <div id="searchBox">
+                        <input
+                            id="searchInput"
+                            type="search"
+                            placeholder="검색어를 입력하세요"
+                        />
+                        <img
+                            id="searchImg"
+                            src="img/search.png"
+                            alt="검색하기"
+                        />
+                    </div>
+                </div>
+                <div id="sub">
+                    <span id="hamburger">≡</span>
+                    <span class="subText">ENGLISH</span>
+                    <span class="subText">누리집 안내 지도</span>
+                    <span>- +</span>
+                </div>
+            </header>
+            <main>
+                <aside>
+                    <section></section>
+                </aside>
+            </main>
+        </div>
+    </body>
+</html>
