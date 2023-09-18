@@ -4,3 +4,133 @@
     margin: 0;
     padding: 0;
 }
+
+div {
+    width: 50px;
+    height: 50px;
+}
+
+div:nth-child(1) {
+    background-color: crimson;
+}
+
+div:nth-child(2) {
+    background-color: orange;
+}
+
+div:nth-child(3) {
+    background-color: greenyellow;
+}
+
+div:nth-child(4) {
+    background-color: blue;
+}
+
+div:nth-child(5) {
+    background-color: violet;
+}
+
+section {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 3px solid black;
+}
+
+#section2 {
+    justify-content: flex-end;
+}
+
+#section3 {
+    justify-content: center;
+}
+
+#section4 {
+    justify-content: space-between;
+}
+
+#section5 {
+    justify-content: space-around;
+}
+
+#section6 {
+    justify-content: space-evenly;
+}
+
+#section7,
+#section8,
+#section9,
+#section10,
+#section11,
+#section12 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+#section8 {
+    justify-content: flex-end;
+}
+
+#section9 {
+    justify-content: center;
+}
+
+#section10 {
+    justify-content: space-between;
+}
+
+#section11 {
+    justify-content: space-around;
+}
+
+#section12 {
+    justify-content: space-evenly;
+}
+
+.s > div:nth-child(1) {
+    height: 70px;
+}
+.s > div:nth-child(2) {
+    height: 60px;
+}
+.s > div:nth-child(3) {
+    height: 40px;
+}
+.s > div:nth-child(4) {
+    height: 100px;
+}
+.s > div:nth-child(5) {
+    height: 90px;
+}
+
+#s1 {
+    align-items: stretch;
+}
+
+#s2 {
+    align-items: flex-start;
+}
+
+#s3 {
+    align-items: flex-end;
+}
+
+#s4 {
+    align-items: center;
+}
+
+#s5 {
+    align-items: baseline;
+}
+
+#s5 > div:nth-child(1),
+#s5 > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+
+#s5 > div:nth-child(2) {
+    align-self: flex-start;
+}

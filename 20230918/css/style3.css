@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+ul > li {
+    display: none;
+    margin-left: 20px;
+}
+
+ul:hover > li {
+    display: block;
+}
+
+#wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    #wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #wrap {
+        flex-direction: row;
+    }
+}
