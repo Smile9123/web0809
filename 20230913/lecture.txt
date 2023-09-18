@@ -1,0 +1,128 @@
+반응형 (responsive) 태그
+- 사용자의 선택이나 사용자의 기기에 따라서 웹 사이트가 반응해야 하는것
+기기: 모바일(스마트폰), 태블릿, PC(데스크탑)
+
+1. 뷰포트 (viewport)
+- width: 뷰포트의 너비 (device-width 기본값)
+- height: 뷰포트의 높이 (device-height 기본값)
+- initial-scale: 초기 값 (1.0 기본 값)
+- user-scalable: 확대/축소 가능 여부 (yes, no)
+
+뷰포트를 이용한 단위 -> vw, vh, vmin, vmax
+- vw: viewport width
+  -> 전체 창의 너비를 100vw로 두고 비례하여 표기
+- vh: viewport height
+  -> 전체 창의 높이를 100vh로 두고 비례하여 표기
+- vmin: viewport minimum (vw, vh 중 작은 값)
+- vmax: viewport maximum (vw, vh 중 큰 값)
+
+%는 부모 기준, 뷰포트는 전체 창 기준
+
+
+2. 미디어 쿼리 (media query)
+- 사이트에 접속하는 기기(모바일, 태블릿, 데스크탑 등)
+  + 크기에 따라서 CSS를 다르게 적용
+
+@media [only, not] 미디어유형 [조건] and [조건] {
+    CSS 스타일 코드
+}
+
+768px과 1200px 사이의 PC화면에 h2 태그에 빨간색을 주려고 한다
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    h2 {
+        color: red;
+    }
+}
+
+미디어 유형
+- 대부분 screen (컴퓨터, 핸드폰) -> 스크린
+- tv, print(프린터기), projection(프로젝터) 등
+
+가로너비
+min-width: 최소 너비
+max-width: 최대 너비
+
+모바일: 320/480 ~ 768px
+태블릿: 768 ~ 960px
+데스크탑(PC): 960 ~ 1080/1200/1440px
+와이드스크린: 그 이상
+
+** 미디어 쿼리도 우선순위가 적용됨 -> 아래 쪽이 더 높음
+-> 충돌 방지를 위해서 항상 그냥 min-width와 max-width를 둘 다 써주는게 좋다
+
+화면 회전 (orientation)
+- 가로방향: landscape (풍경화)
+- 세로방향: portrait (초상화)
+
+
+3. 반응형 배치 (flex 방식, grid 방식)
+flex -> flexible 유연한 배치
+grid -> grid 격자 배치
+
+display: flex;
+display: grid;
+
+grid 방식: 격자를 만들어서 해당 위치에 배치
+grid에서 몇 x 몇짜리 격자인지
+-> fr (fraction) 단위 (같은 너비)
+-> px (pixel) 단위
+반복될 경우에는 repeat 함수를 이용
+
+grid-template-columns
+grid-template-rows
+
+
+
+flex(flexible의 줄임말) -> CSS3에 추가된 배치 방식
+
+display: block, inline, inline-block
+-> 이 display는 나를 위한 것
+display: grid, flex
+-> 이 display는 내 자식을 위한 것
+
+부모 = flexible box (플렉서블 박스)
+자식 = flexible item (플렉서블 아이템)
+
+배치 할 떄 방향 (가로, 세로, 정방향, 역방향)
+- 주축 방향: 가로방향, 교차축 방향: 세로방향
+- 주축의 정방향, 역방향
+
+주축이 가로일 때 정방향: 왼 -> 오
+주축이 가로일 때 역방향: 오 -> 왼
+주축이 세로일 떄 정방향: 위 -> 아
+주축이 세로일 때 역방향: 아 -> 위
+
+배치 방향을 설정하는 속성: flex-direction
+- 가로 방향: row (기본값)
+- 가로 역방향: row-reverse
+- 세로 방향: column
+- 세로 역방향: column-reverse
+
+역방향은 순서도 바뀐다
+
+flex는 배치하면 기본적으로 한 줄에 꽉 채워서 배치가 됨
+플렉스 아이템이 한 줄이 아니라 여러 줄로 배치: flex-wrap
+- 한 줄 배치: no-wrap (기본값)
+- 여러 줄 배치: wrap
+- 여러 줄 배치 하되 역방향으로 배치: wrap-reverse
+
+flex-flow: [flex-direction] [flex-wrap]
+
+
+
+플렉스 아이템 배치하기
+**** 주축이 항상 가로일거다라고 생각 XXX ****
+- 주축 방향 배치: justify-content
+- 교차축 방향 배치: align-items
+
+주축 방향 아이템 배치 : justify-content
+- flex-direction의 시작지점부터: flex-start (기본값)
+- flex-directino의 끝지점부터: flex-end
+- 중앙배치: center
+
+- space-between
+ : 아이템이 n개일 때 남은 공간을 n-1등분해서 사이사이에 끼워넣기
+- space-around
+ : 아이템이 n개일 떄 남은 공간을 n등분해서 아이템의 끝쪽에 
+ n등분한 공간을 절반씩 부여
+-> 양쪽 정렬
