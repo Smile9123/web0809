@@ -1,0 +1,96 @@
+배경에 대한 스타일을 적용하는 속성 : background
+
+background-color: 배경 색 부여
+-> 배경 색은 content + padding + border 까지 배경색이 채워져있음
+
+background-clip: 배경의 영역을 어디까지로 결정할지
+기본 값: border-box (border까지 채워진다)
+padding-box (content+padding만 채워진다)
+content-box (content만 채워진다)
+
+background-image: 배경에 색 대신 사진을 지정한다
+url(경로설정)
+
+background-repeat: 배경의 반복 여부를 결정하는 속성
+repeat: 반복 (기본 값)
+repeat-x: x축방향(가로방향)으로만 반복
+repeat-y: y축방향(세로방향)으로만 반복ㅂ
+no-repeat: 반복하지 않음
+
+background-position: 설정한 배경 사진의 위치를 바꾸는 속성
+-> x방향위치, y방향위치
+키워드 설정: left, center, right, top, center, bottom
+절댓값 설정: px단위 (0px=left, top)
+상댓값 설정: %단위 (0%=left, top) (100%=right, bottom)
+
+background-attachment: 배경이 붙어있냐 아니냐
+사이트에서 스크롤을 할 때 이 배경이 그 위치에 그대로 있냐
+아니면 스크롤에 배경이 따라오냐
+-> body 태그에 사용
+scroll (기본 값) : 배경이 함께 스크롤 됨
+fixed : 배경을 고정한다
+
+background-size: 배경 이미지의 크기를 조절
+auto (기본 값): 배경 이미지의 원래 크기를 그대로 유지
+contain: 요소 안에 배경이 다 들어갈 수 있도록 사진이 확대/축소
+(가로, 세로 중 더 긴 길이에 맞춰짐)
+cover: 배경이 요소에 맞춰짐
+(가로, 세로 중 더 짧은 길이에 맞춰짐)
+
+%, px단위로 -> 요소의 길이에 비례해서 배경을 채울 수 있음
+두 개를 작성하면 각각 가로 길이, 세로 길이에
+-> %는 요소의 가로 세로 길이에 비례해서 사진의 크기가 바뀐다
+한 개를 작성하면 요소의 가로 길이에 맞춰지고
+세로 길이는 원래 사진 크기에 비례해서 맞춰진다
+
+
+
+그라데이션 (CSS3에 추가된 문법)
+- CSS3를 지원하지 않는 브라우저에서는 그라데이션 중에서 가장 앞에 나온 색상 단색으로만 설정
+- 선형, 원형 그라데이션이 있음
+- 그라데이션이라는 속성이 따로 있는것이 아니라
+  background에 그라데이션 함수를 이용해서 설정
+
+선형 그라데이션 linear-gradient(방향, 색상1, 색상2, ...)
+
+방향 설정
+- 키워드 (to ~~방향)
+: left, right, top, bottom, left top, right bottom, left bottom, right top
+- 각도: 숫자deg
+위쪽 방향이 0deg, 시계 방향으로 각도가 360도까지 늘어나게 됨
+
+색이 3개라면 0%위치, 50%위치, 100%위치
+색상의 중지점을 지정할 수 있음
+색상의 오른쪽에 %값 또는 px값을 넣으면 됨
+
+
+원형 그라데이션
+radial-gradient
+- 그라데이션의 중심으로부터 가장 먼 거리를 100%라고 봄
+
+요소의 크기가 직사각형이라면 찌그러져서(타원형)으로 보이게 됨
+-> 찌그러졋더라도 정원형으로 보이게하기 위해서는 앞에 circle 속성을 붙이면 됨
+
+원형 그라데이션의 시작 위치를 바꿀 수 있음 -> at 가로위치 세로위치 
+(위치는 %나 px단위 모두 가능)
+
+기본 값으로는 가장 먼 꼭짓점이 100% (farthest-corner)
+- 가장 가까운 꼭짓점 (closest-corner)
+- 가장 가까운 변 (closest-side)
+- 가장 먼 변 (farthest-side)
+
+
+그라데이션을 반복 시킬 수 있음 (패턴)
+repeating-linear-gradient
+repeating-radial-gradient
+반복 주기 값을 필수로 작성 -> px, % 단위 무관
+반복 주기 값을 쓸때에는 ,를 붙이지 않음
+
+자연스럽게 색이 바뀌는 것이 아니라 이산적으로 색에 대한 패턴을 넣고싶다
+색상1, 색상1 위치1, 색상2 위치1, 색상2 위치2
+
+** 반드시 그라데이션 이용 **
+프랑스 국기
+방글라데시 국기
+미국 국기
+트리니다드 토바고 국기
