@@ -1,0 +1,69 @@
+플렉스 아이템 배치
+- 주축 방향 배치: justify-content
+- 교차축 방향 배치: align-items
+
+주축 방향 배치
+- flex-start: 기본 값 (flex-direction의 시작점부터 배치)
+- flex-end: flex-direction의 끝지점부터 배치
+- center: 중앙배치
+- space-between: 아이템이 N개 나머지 공백을 N-1 등분해서 사이사이에 배치
+- space-around: 아이템이 N개 나머지 공백을 N등분해서 N/2씩 아이템의 양쪽에 배치
+- space-evenly: 아이템이 N개 나머지 공백을 N+1등분해서 사이사이에 모두
+
+교차축 방향 아이템 배치: align-items
+- stretch(기본값): 박스를 확장해서 배치
+- flex-start: 교차축의 시작점에 배치
+- flex-end: 교차축의 끝점에 배치
+- center: 교차축의 가운데에 배치
+- baseline: 자식 박스 중 첫 번째 박스의 컨텐츠의 위치에 맞춰서 배치
+
+교차축 방향 아이템들을 개별 배치: align-self (아이템에 부여하는 속성)
+-> align-items와 속성 값이 같음
+
+
+
+플렉스 아이템들의 순서를 변경할 수 있음: order (아이템에 부여하는 속성)
+- 기본적으로 아이템을 배치할 떄는 HTML 코드 작성 순서대로 배치
+-> order속성을 이용해서 배치 순서를 바꿀 수 있음
+
+
+플렉스 아이템의 크기 조절: flex (아이템에 부여하는 속성)
+flex: <flex-grow> <flex-shrink> <flex-basis>
+flex-grow: 플렉서블 박스에 여백이 남으면, 아이템의 크기를 늘린다
+flex-shrink: 플렉서블 박스에 아이템이 넘치면, 아이템의 크기를 줄인다
+flex-basis: 플렉스 아이템의 기본 크기를 설정
+
+
+
+display: grid, inline-grid;
+-> 그리드 레이아웃: 행과 열의 개수/크기를 지정해서 해당 위치에 요소 배치
+
+grid - 블록 요소인 상태로 그리드 배치
+inline-grid - 인라인 요소에서 그리드 배치
+
+개수 지정
+grid-template-columns -> 열의 갯수
+grid-template-rows -> 행의 개수
+fr 단위, px 단위
+repeat(개수, 단위) -> 반복
+g-t-c: 1fr 1fr 1fr; -> g-t-c: repeat(3, 1fr);
+
+grid에서 박스 내부의 내용이 높이보다 클 경우
+-> 잘리거나 넘치는 경우가 발생 -> minmax 함수
+줄의 높이를 고정하는 것이 아니라 최소/최댓값을 유연하게 지정
+
+minmax(100px, auto) -> 최소 100px 최대 auto (내부 내용에 맞춤)
+
+
+개수: auto-fill, auto-fit
+auto-fill: 화면이 넓을 때 최소 너비만 표현하고 나머지는 그대로 둔다
+auto-fit: 화면이 넓을 때 남는 공간 없이 꽉 채운다
+-> column만 지정
+
+그리드 사이에 간격 지정: grid-gap, grid-column-gap, grid-row-gap
+grid-gap: <grid-row-gap> <grid-column-gap>
+
+그리드 아이템은 원래 순차적으로 위->오른쪽으로 배치가 되는데
+그리드 번호에 배치: grid-column, grid-row
+grid-column: 시작번호/끝번호
+grid-row: 시작번호/끝번호
