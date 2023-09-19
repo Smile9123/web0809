@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.items {
+    width: 90px;
+    height: 90px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#flexwrap1 > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#flexwrap1 > #second:nth-child(1),
+#flexwrap1 > #second:nth-child(2) {
+    flex-direction: column;
+}
+
+#third:nth-child(3) {
+    flex: flex-grow;
+    order: 2;
+}
