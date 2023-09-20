@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-.items {
+#flexwrap .items {
     width: 90px;
     height: 90px;
     margin: 0 10px 10px 0;
@@ -13,15 +13,15 @@
     text-align: center;
 }
 
-#flexwrap1 > div {
+#flexwrap {
     display: flex;
 }
 
-#flexwrap1 .order1 {
-    order: 1;
+#flexwrap .item3 {
+    display: flex;
 }
 
-#flexwrap1 .space {
+#flexwrap .space {
     width: 290px;
     height: 190px;
 }
