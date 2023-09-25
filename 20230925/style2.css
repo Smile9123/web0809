@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body {
+    margin-top: 120px;
+}
+#width {
+    margin: 0 auto;
+    width: 600px;
+}
+.num {
+    float: right;
+}
+
+footer {
+    margin: 300px;
+}
+
+#end {
+    text-align: center;
+}
