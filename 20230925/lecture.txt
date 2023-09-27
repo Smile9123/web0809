@@ -16,7 +16,7 @@ https://getbootstrap.kr/
 
 primary
 secondary
-success
+succes
 danger
 warning
 info
