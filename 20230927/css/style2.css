@@ -8,11 +8,26 @@
 #box > .element {
     float: left;
     width: 300px;
-    shape-outside: url(../img/tree01.jpg);
+    height: 400px;
+    shape-outside: polygon(
+        208px 12px,
+        272px 55px,
+        296px 120px,
+        280px 151px,
+        165px 198px
+    );
+}
+#box {
+    height: 400px;
 }
 
 #box2 > .element {
     float: left;
     width: 300px;
+    height: 345px;
     shape-outside: url(../img/tree02.png);
+    animation: 1s infinite;
+}
+
+@keyframes {
 }
