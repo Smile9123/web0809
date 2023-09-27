@@ -1,0 +1,68 @@
+부트스트랩
+-> html, css 코드를 원래는 우리가 전부 직접 작성해야하는데 기본적으로 코드를 제공해주는
+템플릿/오픈소스/프레임워크
+https://getbootstrap.kr/
+
+
+메인페이지 아래쪽으로 내리면 CDN으로 포함시키기
+-> 2개의 코드 둘 다 html에 작성
+-> link는 부트스트랩을 사용하게 해주는 css
+-> script는 부트스트랩을 사용하게 해주는 자바스크립트
+
+
+부트스트랩을 적용하게 되면 기본값이 다르다
+-> 브라우저 기본 스타일 (margin: 8px)이 삭제
+-> 기본 폰트도 달라진다
+
+primary
+secondary
+success
+danger
+warning
+info
+light
+dark
+
+
+아코디언 (accordian)
+- .accordian -> 아코디언을 선언한 클래스
+- .accordian-item -> 아코디언의 각각의 아이템
+  - .accordian-header -> 아코디언의 제목부
+    - .accordian-button -> 제목부분의 버튼
+      data-bs-target 값은 accordian-collapse의 id와 같아야 한다
+      aria-controls 값도 """
+      aria-expanded true 열려있음, false 닫혀있음
+  - .accordian-collapse -> 아코디언에서 닫히는 부분
+    show 클래스를 추가하면 디폴트 값으로 열려있는 아코디언
+    data-bs-parent 값은 최상단의 accordiand의 id와 같아야 한다
+    - .accordian-body -> 아코디언의 바디
+
+네이버 -> 네이버 링크
+구글 -> 구글 링크 (기본값으로 열려있도록)
+학원사이트 -> 학원사이트 링크
+
+배지 (badge)
+기본적으로 span 태그를 사용
+- .badge -> 배지 생성
+- .bg-<색상> -> 배지의 배경색을 설정
+- .text-bg-<색상> -> 배지의 글씨색을 설정
+- .rounded-pill -> 알약 모양으로 변경
+
+브레드크럼(breadcrumb)
+- 현재 페이지가 네비게이션에서 어느 위치인지
+- nav태그에서 style을 이용해 bs-breadcrumb-divider 변수를 바꿔주면
+/ 대신 다른 문구를 사용할 수 있음
+
+버튼(button)
+태그가 상관이 없음 (a, button, input)
+.btn -> 버튼 생성
+.btn-<색상> -> 버튼의 색상 지정
+.btn-outline-<색상> -> 버튼의 테두리 색 지정
+.btn-sm, .btn-lg -> 버튼의 크기 지정
+
+
+
+아이콘 사용하기
+- 아이콘 탭의 맨 아래로 가서 CDN 의 위쪽 코드만 복사해서 넣기
+- 사용할 아이콘을 클릭
+- 아이콘 폰트에 있는 코드를 복사 붙여넣기

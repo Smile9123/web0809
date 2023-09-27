@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box1 > .element {
+    float: left;
+    width: 300px;
+    height: 200px;
+    shape-outside: circle(50%);
+}
+
+#box2 > .element {
+    float: left;
+    width: 300px;
+    height: 300px;
+    shape-outside: ellipse(100px 200px at 50% 50%);
+}
+
+#box3 > .element {
+    float: left;
+    width: 300px;
+    shape-outside: url(../img/logo.png);
+}
+
+#box3 > .element2 {
+    float: right;
+    width: 300px;
+    shape-outside: url(../img/logo.png);
+}
+
+#box3 > p {
+    text-align: justify;
+}
+
+#box4 > .element {
+    float: left;
+    width: 300px;
+    height: 200px;
+    shape-outside: polygon(0px 0px, 100px 200px, 300px 200px);
+}
+
+#box5 > .element {
+    float: left;
+    width: 270px;
+    height: 250px;
+    shape-outside: polygon(
+        0px 100px,
+        50px 250px,
+        200px 250px,
+        250px 100px,
+        125px 0px
+    );
+    shape-margin: 10px;
+}
