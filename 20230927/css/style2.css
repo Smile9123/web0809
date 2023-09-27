@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box > .element {
+    float: left;
+    width: 300px;
+    shape-outside: url(../img/tree01.jpg);
+}
+
+#box2 > .element {
+    float: left;
+    width: 300px;
+    shape-outside: url(../img/tree02.png);
+}
