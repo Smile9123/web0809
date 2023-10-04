@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+:root {
+    --c-size: 30;
+    --e-size: 5;
+    --g-size: 7.5;
+}
+
+.nav-icon-2 {
+    width: calc(var(--c-size) * 1px);
+    height: calc(var(--c-size) * 1px);
+    position: relative;
+}
+
+.nav-icon-2 span {
+    display: block;
+    position: absolute;
+    width: calc(var(--e-size) * 1px);
+    height: calc(var(--e-size) * 1px);
+    background-color: white;
+    border-radius: 50%;
+    top: calc((var(--e-size) + var(--g-size)) * var(--vc) * 1px);
+    left: calc((var(--e-size) + var(--g-size)) * var(--hc) * 1px);
+}
+
+.nav-icon-2.open {
+    transform: rotate(180deg);
+    transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+
+.nav-icon-2.open span {
+    transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+
+.nav-icon-2.open span:nth-child(1) {
+    left: 7.25px;
+}
+
+.nav-icon-2.open span:nth-child(2) {
+    left: 17.75px;
+}
+
+.nav-icon-2.open span:nth-child(3) {
+    top: 7.25px;
+}
+
+.nav-icon-2.open span:nth-child(4) {
+    top: 7.25px;
+}
+
+.nav-icon-2.open span:nth-child(6) {
+    top: 17.75px;
+}
+
+.nav-icon-2.open span:nth-child(7) {
+    top: 17.75px;
+}
+
+.nav-icon-2.open span:nth-child(8) {
+    left: 7.25px;
+}
+
+.nav-icon-2.open span:nth-child(9) {
+    left: 17.75px;
+}
