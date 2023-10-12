@@ -1,0 +1,58 @@
+웹3 주제 - YBM IT 사이트 클론코딩 + 모바일 새로 만들기
+
+index.html
+css : CSS 파일을 저장할 폴더
+ㄴ reset.css
+  - 브라우저 스타일을 삭제할 때 사용하는 css 파일
+  - 브라우저 간의 차이를 최대한 없앤다 
+    -> 모든 스타일이 0인 상태에서 디자인을 새로 하기 위해서
+    -> a태그: 기본으로 생기는 밑줄과 파란 색상 삭제
+    -> img태그: img태그 사이의 간격 삭제
+    -> table태그: 테이블과 셀 사이에 간격 삭제
+    -> nav ul,li: 리스트에 생성되는 점 삭제
+ㄴ style.css: PC 화면용 CSS (768px 이상)
+ㄴ mobile.css: 모바일용 CSS (767px 이하)
+js : JavaScript 파일을 저장할 폴더
+ㄴ script.js
+static
+ㄴ img : 이미지를 저장할 폴더
+ㄴ fonts : 웹 폰트를 저장할 폴더
+
+
+- HTML 배치하기
+
+#container: 가장 바깥
+
+header: 로그인 줄과 메뉴 줄
+ㄴ div#loginmenu 로그인 줄
+ㄴ nav 메뉴 줄
+section: 슬라이드 배너, 시험 접수 줄
+ㄴ div#slide 슬라이드 배너
+ㄴ div#tests 시험 접수 줄
+main: 메인
+ㄴ section#main1
+  ㄴ div#main1left
+    ㄴ article#testmenu
+    ㄴ article#academy
+  ㄴ div#main1center
+    ㄴ article#notice
+    ㄴ article#sample
+  ㄴ div#main1right
+ㄴ section#main2
+  ㄴ article#main2left
+  ㄴ article#main2right
+ㄴ section#main3
+  ㄴ article#main3left
+  ㄴ article#main3center
+  ㄴ article#main3right
+footer: 푸터
+ㄴ section#footer1
+  ㄴ article#info
+  ㄴ article#tos
+ㄴ section#footerbanner
+
+
+- 각각의 영역에 대해서 크기를 지정
+영역만 줄 때는 항상 임시로 배경색을 지정
+-> 어디까지 영역이 지정되어 있는지 확인하기 위해서
+(임시로 지정할 때에는 뒤에 주석 이용해서 임시로 쓴 것임을 명시)

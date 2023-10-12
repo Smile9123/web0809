@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+#container {
+  margin: 0 auto;
+  width: 1100px;
+  background-color: #ddd; /* 임시로 지정한 색상 */
+}
+
+header {
+  width: 100%;
+  height: 125px;
+  background-color: aquamarine; /* temp */
+}
+
+#loginmenu {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#loginmenu > ul {
+  list-style: none;
+  display: flex;
+}
+
+#loginmenu > ul li {
+  padding: 12px 14px;
+}
+
+#loginmenu > ul a {
+  text-decoration: none;
+}
+
+#loginmenu > ul li:nth-child(1) a,
+#loginmenu > ul li:nth-child(2) a {
+  font-weight: bold;
+}
+
+header nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: chartreuse; /* temp */
+}
+
+nav .gnb {
+  display: flex;
+  align-items: center;
+  margin-left: 66px;
+}
+
+nav .gnb > li {
+  width: 136.666px;
+}
+
+nav .gnb > li > a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav #hambtnwrap {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 60px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+section #slide {
+  width: 100%;
+  height: 425.5px;
+  padding-top: 10px;
+  background-color: darkgoldenrod; /*temp*/
+}
+
+section #tests {
+  width: 100%;
+  height: 156px;
+  padding-bottom: 40px;
+  background-color: fuchsia; /*temp*/
+}
+
+main #main1 {
+  width: 100%;
+  height: 426px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: goldenrod; /*temp*/
+}
+
+#main1left {
+  width: 281px;
+  height: 426px;
+  background-color: navajowhite; /*temp*/
+}
+
+#testmenu {
+  width: 281px;
+  height: 208px;
+  background-color: rebeccapurple; /*temp*/
+}
+
+#academy {
+  width: 281px;
+  height: 188px;
+  margin-top: 30px;
+  background-color: salmon; /*temp*/
+}
+
+#main1center {
+  width: 460px;
+  height: 426px;
+  background-color: orangered; /*temp*/
+}
+
+#notice {
+  width: 460px;
+  height: 147.5px;
+  background-color: teal; /*temp*/
+}
+
+#sample {
+  width: 460px;
+  height: 188.5px;
+  margin-top: 90px;
+  background-color: violet; /*temp*/
+}
+
+#main1right {
+  width: 281px;
+  height: 426px;
+  background-color: palegreen; /*temp*/
+}
+
+main #main2 {
+  width: 100%;
+  height: 180.5px;
+  margin-bottom: 40px;
+  background-color: hotpink; /*temp*/
+}
+
+#main2title {
+  width: 100%;
+  height: 16.5px;
+  margin-bottom: 24px;
+  background-color: wheat; /*temp*/
+}
+
+#main2cont {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  background-color: yellow; /*temp*/
+}
+
+#main2left {
+  width: 413px;
+  height: 88px;
+  padding: 26px 20px;
+  background-color: aqua; /*temp*/
+}
+
+#main2right {
+  width: 256px;
+  height: 106px;
+  padding: 16px;
+  margin-left: 16px;
+  background-color: cadetblue; /*temp*/
+}
+
+main #main3 {
+  width: 100%;
+  height: 104px;
+  padding-bottom: 90px;
+  background-color: indigo; /*temp*/
+}
+
+#main3title {
+  width: 100%;
+  height: 16.5px;
+  margin-bottom: 24px;
+  background-color: darkblue; /*temp*/
+}
+
+#main3cont {
+  width: 100%;
+  height: 63.5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: floralwhite; /*temp*/
+}
+
+#main3cont > article {
+  width: 290px;
+  height: 63.5px;
+  background-color: gold; /*temp*/
+}
+
+footer {
+  width: 100%;
+  height: 422px;
+  padding: 25px 0 30px 0;
+  background-color: khaki; /*temp*/
+}
+
+footer #footer1 {
+  width: 100%;
+  height: 232px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lemonchiffon; /*temp*/
+}
+
+#footer1 #info {
+  width: 795px;
+  height: 232px;
+  background-color: honeydew; /*temp*/
+}
+
+#footer1 #tos {
+  width: 231px;
+  height: 140px;
+  padding: 0 0 23px 23px;
+  background-color: indigo; /*temp*/
+}
+
+footer #footerbanner {
+  width: 100%;
+  height: 140px;
+  padding: 20px 0;
+  background-color: mediumaquamarine; /*temp*/
+}
