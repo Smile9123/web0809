@@ -1,101 +1,183 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YBM IT 클론코딩</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/mobile.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YBM IT 클론코딩</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-</head>
-
-<body>
-    <div id="container">
-        <header>
-            <div id="loginmenu">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#"><i class="bi bi-person"></i> 마이페이지</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">관련사이트 <i class="bi bi-caret-down-fill"></i></a></li>
-                </ul>
-            </div>
-            <nav>
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="static/img/logo.gif" alt="logo">
+    <body>
+        <div id="container">
+            <header>
+                <div id="loginmenu">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <a href="#"
+                                ><i class="bi bi-person"></i> 마이페이지</a
+                            >
+                        </li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>
+                            <a href="#"
+                                >관련사이트 <i class="bi bi-caret-down-fill"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="static/img/logo.gif" alt="logo" />
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">시험접수</a>
+                        </li>
+                        <li>
+                            <a href="#">MOS</a>
+                        </li>
+                        <li>
+                            <a href="#">COS</a>
+                        </li>
+                        <li>
+                            <a href="#">COS Pro</a>
+                        </li>
+                        <li>
+                            <a href="#">DATA</a>
+                        </li>
+                        <li>
+                            <a href="#">시험활용</a>
+                        </li>
+                    </ul>
+                    <a href="#" id="hambtnwrap">
+                        <span class="hambtn"></span>
+                        <span class="hambtn"></span>
+                        <span class="hambtn"></span>
                     </a>
-                </h1>
-                <ul class="gnb">
-                    <li>
-                        <a href="#">시험접수</a>
-                    </li>
-                    <li>
-                        <a href="#">MOS</a>
-                    </li>
-                    <li>
-                        <a href="#">COS</a>
-                    </li>
-                    <li>
-                        <a href="#">COS Pro</a>
-                    </li>
-                    <li>
-                        <a href="#">DATA</a>
-                    </li>
-                    <li>
-                        <a href="#">시험활용</a>
-                    </li>
-                </ul>
-                <a href="#" id="hambtnwrap">
-                    <span class="hambtn"></span>
-                    <span class="hambtn"></span>
-                    <span class="hambtn"></span>
-                </a>
-            </nav>
-        </header>
-        <section>
-            <div id="slide"></div>
-            <div id="tests"></div>
-        </section>
-        <main>
-            <section id="main1">
-                <div id="main1left">
-                    <article id="testmenu"></article>
-                    <article id="academy"></article>
+                </nav>
+            </header>
+            <section>
+                <div id="slide">
+                    <div id="slideimgwrap">
+                        <article class="slideimg">
+                            <img
+                                src="static/img/main_slide_01.png"
+                                alt="Main Slide 1"
+                            />
+                        </article>
+                        <article class="slideimg">
+                            <img
+                                src="static/img/main_slide_02.png"
+                                alt="Main Slide 2"
+                            />
+                        </article>
+                    </div>
+                    <div id="slidepage">
+                        <div id="pagenum">1/4</div>
+                        <div id="slideall">
+                            전체보기<i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="slideprev">
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div id="slidenext">
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
                 </div>
-                <div id="main1center">
-                    <article id="notice"></article>
-                    <article id="sample"></article>
-                </div>
-                <div id="main1right"></div>
-            </section>
-            <section id="main2">
-                <h3 id="main2title"></h3>
-                <div id="main2cont">
-                    <article id="main2left"></article>
-                    <article id="main2right"></article>
-                </div>
-            </section>
-            <section id="main3">
-                <h2 id="main3title"></h2>
-                <div id="main3cont">
-                    <article id="main3left"></article>
-                    <article id="main3center"></article>
-                    <article id="main3right"></article>
+                <div id="tests">
+                    <article class="exam" id="mosexam">
+                        <p class="etitle">
+                            마이크로소프트사가 입증한 office 자격증
+                        </p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="cosexam">
+                        <p class="etitle">코딩활용능력시험</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="cosproexam">
+                        <p class="etitle">코딩전문가자격시험</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="dataexam">
+                        <p class="etitle">데이터분석기술평가</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
                 </div>
             </section>
-        </main>
-        <footer>
-            <section id="footer1">
-                <article id="info"></article>
-                <article id="tos"></article>
-            </section>
-            <section id="footerbanner"></section>
-        </footer>
-    </div>
-</body>
-
+            <main>
+                <section id="main1">
+                    <div id="main1left">
+                        <article id="testmenu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>시험 아이디 찾기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>자격증 발급</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>MOS Can do List</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>직장인 MOS 취득효과</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article id="academy"></article>
+                    </div>
+                    <div id="main1center">
+                        <article id="notice"></article>
+                        <article id="sample"></article>
+                    </div>
+                    <div id="main1right"></div>
+                </section>
+                <section id="main2">
+                    <h3 id="main2title"></h3>
+                    <div id="main2cont">
+                        <article id="main2left"></article>
+                        <article id="main2right"></article>
+                    </div>
+                </section>
+                <section id="main3">
+                    <h2 id="main3title"></h2>
+                    <div id="main3cont">
+                        <article id="main3left"></article>
+                        <article id="main3center"></article>
+                        <article id="main3right"></article>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <section id="footer1">
+                    <article id="info"></article>
+                    <article id="tos"></article>
+                </section>
+                <section id="footerbanner"></section>
+            </footer>
+        </div>
+    </body>
 </html>
