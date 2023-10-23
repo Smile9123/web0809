@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    padding-bottom: 38px;
+}
+
+#main1 {
+    width: 100%;
+    height: 938px;
+    background-color: orange; /*del*/
+}
+
+#mainimg {
+    width: 100%;
+    height: 535px;
+    background-color: chartreuse;
+}
+
+#maininner {
+    width: 1200px;
+    height: 316px;
+    margin: 0 auto;
+    margin-top: -124px;
+    background-color: darkgreen;
+}
+
+#selectmenu {
+    width: 1200px;
+    height: 169px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: darksalmon;
+}
+
+#main2 {
+    width: 100%;
+    height: 250px;
+    padding: 21px 0 46px 0;
+    background-color: deeppink;
+}
+
+#main2wrap {
+    margin: 0 351.5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+}
+
+.main2notice {
+    width: 48.3%;
+    height: 250px;
+    background-color: blueviolet;
+}
+
+#main2left {
+}
