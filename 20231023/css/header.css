@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    background-color: #eee; /*del*/
+}
+
+#headwrap {
+    width: 1280px;
+    height: 109px;
+    background-color: aquamarine; /*del*/
+}
+
+#loginmenu {
+    width: 100%;
+    height: 27px;
+    background-color: aqua; /*del*/
+}
+
+#mainmenu {
+    width: 100%;
+    height: 75px;
+    background-color: blue; /*del*/
+}
