@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+footer {
+  width: 100%;
+  height: 422px;
+  padding: 25px 0 30px 0;
+}
+
+footer #footer1 {
+  width: 100%;
+  height: 232px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer1 #info {
+  width: 795px;
+  height: 232px;
+}
+
+#info #fnb {
+  list-style: none;
+  display: flex;
+}
+
+#fnb li {
+  padding: 0 10px;
+}
+
+#fnb li:nth-child(1) {
+  padding-left: 0;
+}
+
+#fnb li:not(:nth-child(3)) {
+  border-right: 1px solid #eee;
+}
+
+#fnb li a {
+  text-decoration: none;
+}
+
+#info #address {
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+#info #noticemessage {
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+#footer1 #tos {
+  width: 231px;
+  height: 140px;
+  padding: 0 0 23px 23px;
+  border-left: 1px solid gray;
+}
+
+#tos #tosinfo {
+  font-size: 12px;
+  margin-top: 12px;
+  line-height: 22px;
+  letter-spacing: -1.5px;
+}
+
+#tos #tosconfirm a {
+  display: block;
+  font-size: 12px;
+  line-height: 27px;
+  padding-top: 8px;
+  text-decoration: none;
+  background-image: url(../static/img/ic_sm_arr.png);
+  background-repeat: no-repeat;
+  background-position: 55% 65%;
+}
+
+footer #footerbanner {
+  width: 100%;
+  height: 140px;
+  padding: 20px 0;
+}
+
+#footerbanner a {
+  display: block;
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  background-color: #eee;
+}

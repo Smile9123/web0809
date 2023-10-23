@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+header {
+  width: 100%;
+  height: 125px;
+}
+
+#loginmenu {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#loginmenu > ul {
+  list-style: none;
+  display: flex;
+}
+
+#loginmenu > ul li {
+  padding: 12px 14px;
+}
+
+#loginmenu > ul a {
+  text-decoration: none;
+}
+
+#loginmenu > ul li:nth-child(1) a,
+#loginmenu > ul li:nth-child(2) a {
+  font-weight: bold;
+}
+
+header nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+
+nav .gnb {
+  display: flex;
+  margin-left: 66px;
+}
+
+nav .gnb > li {
+  width: 136.666px;
+}
+
+nav .gnb > li > a {
+  display: block;
+  height: 78px;
+  line-height: 78px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .gnb .snb {
+  display: block;
+  position: relative;
+  height: 0;
+  font-size: 0;
+  z-index: 5;
+  height: 0;
+  transition: height 0.3s;
+}
+
+nav .gnb:hover .snb {
+  height: 100%;
+  font-size: 14px;
+  display: block;
+  background-color: white;
+}
+
+nav .gnb .snb li {
+  line-height: 0;
+  margin-top: 0;
+  letter-spacing: -1px;
+}
+
+nav .gnb:hover .snb li {
+  line-height: 18px;
+  margin-top: 18px;
+}
+
+nav .gnb .snb .snbline {
+  border-top: none;
+  margin-right: 10px;
+}
+
+nav .gnb:hover .snb .snbline {
+  border-top: 1px solid gray;
+  margin-right: 10px;
+}
+
+nav .gnb #snbbg {
+  height: 0;
+  transition: height 0.3s;
+}
+
+nav .gnb:hover #snbbg {
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  border-bottom: 1px solid gray;
+  top: 78px;
+  height: 378px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1100px) {
+  nav .gnb:hover #snbbg {
+    left: calc((100vw - 1100px) / -2);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav .gnb:hover #snbbg {
+    left: 0;
+  }
+}
+
+nav #hambtnwrap {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 60px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  align-self: center;
+}
+
+#hambtnwrap .hambtn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+#hambtnwrap .hambtn:nth-child(1) {
+  margin-top: -7px;
+}
+
+#hambtnwrap .hambtn:nth-child(3) {
+  margin-top: 7px;
+}

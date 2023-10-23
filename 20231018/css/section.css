@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+section #slide {
+  width: 100%;
+  height: 425.5px;
+  padding-top: 10px;
+  position: relative;
+}
+
+#slideimgwrap {
+  height: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#slidepage {
+  padding: 20px 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#slidepage #pagenum {
+  width: 60px;
+  height: 30px;
+  background-color: gainsboro;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+#slidepage #slideall {
+  width: 87px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid gainsboro;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+#slide #slideprev,
+#slide #slidenext {
+  position: absolute;
+  color: gray;
+  font-size: 50px;
+}
+
+#slide #slideprev {
+  left: -60px;
+  top: 165px;
+}
+
+#slide #slidenext {
+  right: -60px;
+  top: 165px;
+}
+
+section #tests {
+  width: 100%;
+  height: 156px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tests .exam {
+  width: 257px;
+  height: 154px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mosexam {
+  --examcolor: #ff761e;
+}
+
+#cosexam {
+  --examcolor: #0092e5;
+}
+
+#cosproexam {
+  --examcolor: #0065b8;
+}
+
+#dataexam {
+  --examcolor: #5759a9;
+}
+
+.exam:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px 3px #999;
+  transition: cursor 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.exam:hover .ebutton {
+  background-color: var(--examcolor);
+  color: white;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.exam .etitle {
+  width: 100%;
+  height: 14px;
+  font-size: 14px;
+  padding: 8px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  letter-spacing: -2px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--examcolor);
+}
+
+.exam .elogo {
+  width: 100%;
+  height: 80px;
+}
+
+#mosexam .elogo {
+  background-image: url(../static/img/mos_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#cosexam .elogo {
+  background-image: url(../static/img/cos_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#cosproexam .elogo {
+  background-image: url(../static/img/cospro_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#dataexam .elogo {
+  background-image: url(../static/img/data_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.exam .ebutton {
+  display: block;
+  width: 220px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid var(--examcolor);
+  border-radius: 8px;
+  color: var(--examcolor);
+  font-weight: bold;
+}

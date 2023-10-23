@@ -1,310 +1,465 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YBM IT 클론코딩</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/mobile.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/section.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YBM IT 클론코딩</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-</head>
-
-<body>
-    <div id="container">
-        <header>
-            <div id="loginmenu">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#"><i class="bi bi-person"></i> 마이페이지</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">관련사이트 <i class="bi bi-caret-down-fill"></i></a></li>
-                </ul>
-            </div>
-            <nav>
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="static/img/logo.gif" alt="logo">
-                    </a>
-                </h1>
-                <ul class="gnb">
-                    <li>
-                        <a href="#">시험접수</a>
-                    </li>
-                    <li>
-                        <a href="#">MOS</a>
-                    </li>
-                    <li>
-                        <a href="#">COS</a>
-                    </li>
-                    <li>
-                        <a href="#">COS Pro</a>
-                    </li>
-                    <li>
-                        <a href="#">DATA</a>
-                    </li>
-                    <li>
-                        <a href="#">시험활용</a>
-                    </li>
-                </ul>
-                <a href="#" id="hambtnwrap">
-                    <span class="hambtn"></span>
-                    <span class="hambtn"></span>
-                    <span class="hambtn"></span>
-                </a>
-            </nav>
-        </header>
-        <section>
-            <div id="slide">
-                <div id="slideimgwrap">
-                    <article class="slideimg">
-                        <img src="static/img/main_slide_1.png" alt="Main Slide 1">
-                    </article>
-                    <article class="slideimg">
-                        <img src="static/img/main_slide_2.png" alt="Main Slide 2">
-                    </article>
+    <body>
+        <div id="container">
+            <header>
+                <div id="loginmenu">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <a href="#"
+                                ><i class="bi bi-person"></i> 마이페이지</a
+                            >
+                        </li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>
+                            <a href="#"
+                                >관련사이트 <i class="bi bi-caret-down-fill"></i
+                            ></a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="slidepage">
-                    <div id="pagenum">1/4</div>
-                    <div id="slideall">전체보기 <i class="bi bi-chevron-right"></i></div>
-                </div>
-                <div id="slideprev"><i class="bi bi-chevron-left"></i></div>
-                <div id="slidenext"><i class="bi bi-chevron-right"></i></div>
-            </div>
-            <div id="tests">
-                <article class="exam" id="mosexam">
-                    <p class="etitle">마이크로소프트사가 인증한 Office 자격증</p>
-                    <h4 class="elogo"></h4>
-                    <span class="ebutton">시험접수</span>
-                </article>
-                <article class="exam" id="cosexam">
-                    <p class="etitle">코딩활용능력시험</p>
-                    <h4 class="elogo"></h4>
-                    <span class="ebutton">시험접수</span>
-                </article>
-                <article class="exam" id="cosproexam">
-                    <p class="etitle">코딩전문가자격시험</p>
-                    <h4 class="elogo"></h4>
-                    <span class="ebutton">시험접수</span>
-                </article>
-                <article class="exam" id="dataexam">
-                    <p class="etitle">데이터분석기술평가</p>
-                    <h4 class="elogo"></h4>
-                    <span class="ebutton">시험접수</span>
-                </article>
-            </div>
-        </section>
-        <main>
-            <section id="main1">
-                <div id="main1left">
-                    <article id="testmenu">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <p>시험 아이디 찾기</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>자격증 발급</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>MOS Can do List</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>직장인 MOS 취득효과</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </article>
-                    <article id="academy">
-                        <p id="academytitle">
-                            내가 배우고 싶은 교육은 ?<br>
-                            <strong>지역별 학원정보 찾기</strong>
-                        </p>
-                        <ul>
-                            <li>MOS</li>
-                            <li>COS</li>
-                            <li>COS Pro</li>
-                        </ul>
-                    </article>
-                </div>
-                <div id="main1center">
-                    <article id="notice">
-                        <div id="noticehead">
-                            <ul id="noticetab">
-                                <li class="active">공지사항</li>
-                                <li>자주묻는 질문</li>
+                <nav>
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="static/img/logo.gif" alt="logo" />
+                        </a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">시험접수</a>
+                            <div id="snbbg"></div>
+                            <ul class="snb" id="snb1">
+                                <li>온라인 접수</li>
+                                <li>접수확인/수험표출력</li>
+                                <li>접수변경/취소</li>
+                                <li>온라인 접수</li>
+                                <li>접수확인/수험표출력</li>
+                                <li>접수변경/취소</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MOS</a>
+                            <ul class="snb" id="snb2">
+                                <li>MOS</li>
+                                <li>MOS 시험 체험하기</li>
+                                <li>2016 자세히 알아보기</li>
+                                <li class="snbline"></li>
+                                <li>MOS</li>
+                                <li>MOS 시험 체험하기</li>
+                                <li>2016 자세히 알아보기</li>
+                                <li>2016 자세히 알아보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">COS</a>
+                            <ul class="snb" id="snb3">
+                                <li>COS</li>
+                                <li>COS 시험 체험하기</li>
+                                <li>2016 자세히 알아보기</li>
+                                <li class="snbline"></li>
+                                <li>COS</li>
+                                <li>COS 시험 체험하기</li>
+                                <li>2016 자세히 알아보기</li>
+                                <li>2016 자세히 알아보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">COS Pro</a>
+                            <ul class="snb" id="snb4">
+                                <li>COS Pro</li>
+                                <li>COS Pro 샘플문제</li>
+                                <li class="snbline"></li>
+                                <li>COS Pro</li>
+                                <li>COS Pro 샘플문제</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">DATA</a>
+                            <ul class="snb" id="snb5">
+                                <li>DATA 소개</li>
+                                <li>DATA 샘플문제</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">시험활용</a>
+                            <ul class="snb" id="snb6">
+                                <li>채용정보</li>
+                                <li>활용사례</li>
                                 <li>보도자료</li>
+                                <li>홍보영상</li>
+                                <li>보도자료</li>
+                                <li>홍보영상</li>
                             </ul>
-                            <div>
+                        </li>
+                    </ul>
+                    <a href="#" id="hambtnwrap">
+                        <span class="hambtn"></span>
+                        <span class="hambtn"></span>
+                        <span class="hambtn"></span>
+                    </a>
+                </nav>
+            </header>
+            <section>
+                <div id="slide">
+                    <div id="slideimgwrap">
+                        <article class="slideimg">
+                            <img
+                                src="static/img/main_slide_1.png"
+                                alt="Main Slide 1"
+                            />
+                        </article>
+                        <article class="slideimg">
+                            <img
+                                src="static/img/main_slide_2.png"
+                                alt="Main Slide 2"
+                            />
+                        </article>
+                    </div>
+                    <div id="slidepage">
+                        <div id="pagenum">1/4</div>
+                        <div id="slideall">
+                            전체보기 <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="slideprev"><i class="bi bi-chevron-left"></i></div>
+                    <div id="slidenext">
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </div>
+                <div id="tests">
+                    <article class="exam" id="mosexam">
+                        <p class="etitle">
+                            마이크로소프트사가 인증한 Office 자격증
+                        </p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="cosexam">
+                        <p class="etitle">코딩활용능력시험</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="cosproexam">
+                        <p class="etitle">코딩전문가자격시험</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                    <article class="exam" id="dataexam">
+                        <p class="etitle">데이터분석기술평가</p>
+                        <h4 class="elogo"></h4>
+                        <span class="ebutton">시험접수</span>
+                    </article>
+                </div>
+            </section>
+            <main>
+                <section id="main1">
+                    <div id="main1left">
+                        <article id="testmenu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>시험 아이디 찾기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>자격증 발급</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>MOS Can do List</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>직장인 MOS 취득효과</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article id="academy">
+                            <p id="academytitle">
+                                내가 배우고 싶은 교육은 ?<br />
+                                <strong>지역별 학원정보 찾기</strong>
+                            </p>
+                            <ul>
+                                <li>MOS</li>
+                                <li>COS</li>
+                                <li>COS Pro</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div id="main1center">
+                        <article id="notice">
+                            <div id="noticehead">
+                                <ul id="noticetab">
+                                    <li class="active">공지사항</li>
+                                    <li>자주묻는 질문</li>
+                                    <li>보도자료</li>
+                                </ul>
+                                <div>
+                                    <a href="#">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="noticebody">
+                                <ul id="noticelist">
+                                    <li class="noticeitem">
+                                        <span class="noticetitle">
+                                            2023 K-EDU 창의력 경진대회 시상식
+                                            진행
+                                        </span>
+                                        <span class="noticedate">
+                                            2023-09-27
+                                        </span>
+                                    </li>
+                                    <li class="noticeitem">
+                                        <span class="noticetitle">
+                                            YBM IT 규정 신분증 개정 공지
+                                        </span>
+                                        <span class="noticedate">
+                                            2023-05-01
+                                        </span>
+                                    </li>
+                                    <li class="noticeitem">
+                                        <span class="noticetitle">
+                                            YBM 개인정보처리방침 개정
+                                        </span>
+                                        <span class="noticedate">
+                                            2023-07-13
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article id="sample">
+                            <div class="samplelist">
                                 <a href="#">
-                                    <i class="bi bi-plus-lg"></i>
+                                    <span class="sampletitle"
+                                        >COS 샘플문제</span
+                                    >
+                                    <span class="sampleicon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
                                 </a>
                             </div>
+                            <div class="samplelist">
+                                <a href="#">
+                                    <span class="sampletitle"
+                                        >COS Pro 샘플문제</span
+                                    >
+                                    <span class="sampleicon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="samplelist">
+                                <a href="#">
+                                    <span class="sampletitle"
+                                        >DATA 샘플문제</span
+                                    >
+                                    <span class="sampleicon">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="samplelist">
+                                <a href="#"> MOS 홍보영상 </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div id="main1right">
+                        <div id="usagehead">
+                            <h3 id="usagetitle">시험활용</h3>
+                            <ul id="usagetype">
+                                <li class="active">채용정보</li>
+                                <li>기업</li>
+                                <li>대학</li>
+                            </ul>
                         </div>
-                        <div id="noticebody">
-                            <ul id="noticelist">
-                                <li class="noticeitem">
-                                    <span class="noticetitle">
-                                        2023 K-EDU 창의력 경진대회 시상식 진행
+                        <div id="usagebody">
+                            <ul id="usagelist">
+                                <li>
+                                    <span class="usagecompany">
+                                        SBS아카데미
                                     </span>
-                                    <span class="noticedate">
-                                        2023-09-27
-                                    </span>
-                                </li>
-                                <li class="noticeitem">
-                                    <span class="noticetitle">
-                                        YBM IT 규정 신분증 개정 공지
-                                    </span>
-                                    <span class="noticedate">
-                                        2023-05-01
+                                    <span class="usagetype">
+                                        시스템 담당자 채용
                                     </span>
                                 </li>
-                                <li class="noticeitem">
-                                    <span class="noticetitle">
-                                        YBM 개인정보처리방침 개정
+                                <li>
+                                    <span class="usagecompany">
+                                        SBS아카데미
                                     </span>
-                                    <span class="noticedate">
-                                        2023-07-13
+                                    <span class="usagetype">
+                                        시스템 담당자 채용
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="usagecompany">
+                                        SBS아카데미
+                                    </span>
+                                    <span class="usagetype">
+                                        시스템 담당자 채용
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="usagecompany">
+                                        SBS아카데미
+                                    </span>
+                                    <span class="usagetype">
+                                        시스템 담당자 채용
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="usagecompany">
+                                        SBS아카데미
+                                    </span>
+                                    <span class="usagetype">
+                                        시스템 담당자 채용
                                     </span>
                                 </li>
                             </ul>
-                        </div>
-                    </article>
-                    <article id="sample">
-                        <div class="samplelist">
-                            <a href="#">
-                                <span class="sampletitle">COS 샘플문제</span>
-                                <span class="sampleicon">
-                                    <i class="bi bi-chevron-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="samplelist">
-                            <a href="#">
-                                <span class="sampletitle">COS Pro 샘플문제</span>
-                                <span class="sampleicon">
-                                    <i class="bi bi-chevron-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="samplelist">
-                            <a href="#">
-                                <span class="sampletitle">DATA 샘플문제</span>
-                                <span class="sampleicon">
-                                    <i class="bi bi-chevron-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="samplelist">
-                            <a href="#">
-                                MOS 홍보영상
-                            </a>
-                        </div>
-                    </article>
-                </div>
-                <div id="main1right">
-                    <div id="usagehead">
-                        <h3 id="usagetitle">시험활용</h3>
-                        <ul id="usagetype">
-                            <li class="active">채용정보</li>
-                            <li>기업</li>
-                            <li>대학</li>
-                        </ul>
-                    </div>
-                    <div id="usagebody">
-                        <ul id="usagelist">
-                            <li>
-                                <span class="usagecompany">
-                                    SBS아카데미
-                                </span>
-                                <span class="usagetype">
-                                    시스템 담당자 채용
-                                </span>
-                            </li>
-                            <li>
-                                <span class="usagecompany">
-                                    SBS아카데미
-                                </span>
-                                <span class="usagetype">
-                                    시스템 담당자 채용
-                                </span>
-                            </li>
-                            <li>
-                                <span class="usagecompany">
-                                    SBS아카데미
-                                </span>
-                                <span class="usagetype">
-                                    시스템 담당자 채용
-                                </span>
-                            </li>
-                            <li>
-                                <span class="usagecompany">
-                                    SBS아카데미
-                                </span>
-                                <span class="usagetype">
-                                    시스템 담당자 채용
-                                </span>
-                            </li>
-                            <li>
-                                <span class="usagecompany">
-                                    SBS아카데미
-                                </span>
-                                <span class="usagetype">
-                                    시스템 담당자 채용
-                                </span>
-                            </li>
-                        </ul>
-                        <div id="usagecont">
-                            <div id="contdown">
-                                <i class="bi bi-chevron-down"></i>
-                            </div>
-                            <div id="contup">
-                                <i class="bi bi-chevron-up"></i>
+                            <div id="usagecont">
+                                <div id="contdown">
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div id="contup">
+                                    <i class="bi bi-chevron-up"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="main2">
-                <h3 id="main2title">단체시험 상담</h3>
-                <div id="main2cont">
-                    <article id="main2left">
-                        <div id="grouptitle">
-                            <h4>기업 기관(학원) 및 초,중,고 / 대학교</h4>
-                            <p>단체시험 및 시험센터운영 문의</p>
-                        </div>
-                        <span>
-                            바로가기
-                        </span>
+                </section>
+                <section id="main2">
+                    <h3 id="main2title">단체시험 상담</h3>
+                    <div id="main2cont">
+                        <article id="main2left">
+                            <div id="grouptitle">
+                                <h4>기업 기관(학원) 및 초,중,고 / 대학교</h4>
+                                <p>단체시험 및 시험센터운영 문의</p>
+                            </div>
+                            <span> 바로가기 </span>
+                        </article>
+                        <article id="main2right">
+                            <ul id="guidelist">
+                                <li>
+                                    <a href="#">시험접수<br />가이드</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ<br />바로가기</a>
+                                </li>
+                                <li>
+                                    <a href="#">1:1 문의<br />게시판</a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+                <section id="main3">
+                    <h2 id="main3title">고객센터</h2>
+                    <div id="main3cont">
+                        <article id="main3left">
+                            <p class="main3phone">
+                                시험, 자격증, 결제오류 문의
+                                <strong>02-0000-0000</strong>
+                            </p>
+                            <p class="main3info">
+                                평일 9:30 ~ 17:00 ( 점심 12:30 ~ 13:30 )
+                            </p>
+                        </article>
+                        <article id="main3center">
+                            <p class="main3phone">
+                                회원가입, 인증문의
+                                <strong>02-0000-0000 후 '0'번</strong>
+                            </p>
+                            <p class="main3info">
+                                평일 9:00 ~ 18:00 ( 점심 12:30 ~ 13:30 )
+                            </p>
+                        </article>
+                        <article id="main3right">
+                            <p class="main3phone">
+                                YBM커리어캠퍼스 응시권 환불, 취소 문의
+                            </p>
+                            <span class="ebutton">1:1문의 바로가기</span>
+                        </article>
+                    </div>
+                </section>
+            </main>
+            <hr id="footerline" />
+            <footer>
+                <section id="footer1">
+                    <article id="info">
+                        <ul id="fnb">
+                            <li>
+                                <a href="#">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong>개인정보처리방침</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                            </li>
+                        </ul>
+                        <p id="address">
+                            수탁사업자 (주)와이비엠넷<br />
+                            사업자등록번호 000-00-00000 / 통신판매업신고
+                            0000-서울종로-0000 / 사업자정보확인<br />
+                            시험,결제 02-0000-0000 / 회원인증: 02-0000-0000
+                            개인정보: privacy@example.com<br />
+                            호스팅사업자: (주)와이비엠넷<br />
+                            Copyright (c) (주)와이비엠&(주)와이비엠넷. All
+                            rights reserved.
+                        </p>
+                        <p id="noticemessage">
+                            ㈜와이비엠넷은 통신판매중개자로서 YBM IT 서비스는
+                            ㈜와이비엠의 책임하에 운영되고 있습니다.<br />
+                            사업자 : ㈜와이비엠 서울 종로구 종로 104 / 대표이사
+                            : 허문호 / 사업자등록번호 : 101-81-14655 /
+                            02.2000.0509 / ybmit@ybm.co.kr
+                        </p>
                     </article>
-                    <article id="main2right"></article>
-                </div>
-            </section>
-            <section id="main3">
-                <h2 id="main3title"></h2>
-                <div id="main3cont">
-                    <article id="main3left"></article>
-                    <article id="main3center"></article>
-                    <article id="main3right"></article>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section id="footer1">
-                <article id="info"></article>
-                <article id="tos"></article>
-            </section>
-            <section id="footerbanner"></section>
-        </footer>
-    </div>
-</body>
-
+                    <article id="tos">
+                        <p id="tostitle">기업은행 채무지급보증안내</p>
+                        <p id="tosinfo">
+                            전자상거래 등에서의 소비자보호에 관한 법률에 따라
+                            기업은행과 채무지급보증 계약을 체결하여 고객님의
+                            결제금액에 대한 안전거래를 보장하고 있습니다.
+                        </p>
+                        <p id="tosconfirm">
+                            <a href="#"> 서비스가입 사실 확인 </a>
+                        </p>
+                    </article>
+                </section>
+                <section id="footerbanner">
+                    <a href="#">
+                        <img src="static/img/ban_j_creator.png" alt="" />
+                    </a>
+                </section>
+            </footer>
+        </div>
+    </body>
 </html>
