@@ -32,6 +32,12 @@ header {
     padding-left: 16px;
 }
 
+#langmenu .lang:nth-child(1),
+#langmenu .lang:nth-child(2),
+#langmenu .lang:nth-child(3) {
+    border-right: 1px solid gray;
+}
+
 #mainmenu {
     width: 100%;
     height: 75px;
