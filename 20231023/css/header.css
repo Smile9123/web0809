@@ -15,9 +15,12 @@ header {
 }
 
 #loginmenu {
-    width: 100%;
+    width: 97%;
     height: 27px;
-    background-color: aqua; /*del*/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font: normal 14px/1.5 NanumBarunGothic, Dotum;
 }
 
 #loginmenu #langmenu {
@@ -26,20 +29,75 @@ header {
 }
 
 #langmenu .lang {
-    font: normal 14px/1.5 NanumBarunGothic, Dotum;
-    color: #333;
+    color: #999;
     margin-right: 10px;
-    padding-left: 16px;
+    padding-left: 4px;
+    padding-right: 12px;
+    text-decoration: none;
 }
 
 #langmenu .lang:nth-child(1),
 #langmenu .lang:nth-child(2),
 #langmenu .lang:nth-child(3) {
-    border-right: 1px solid gray;
+    border-right: 1px solid #999;
+}
+
+#langmenu .lang:nth-child(4) {
+    padding-right: 15px;
+}
+
+#loginmenu #srch {
+    border-left: 1px solid #999;
+    padding-left: 13px;
+    padding-right: 16px;
+}
+
+#loginmenu #reg1 {
+    font-size: 13px;
+    color: #999;
+    padding: 7px 15px 7px 15px;
+    border: 1px solid #999;
+}
+
+#loginmenu #reg2 {
+    font-size: 13px;
+    color: #999;
+    padding: 7px 15px 7px 15px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
 #mainmenu {
     width: 100%;
     height: 75px;
-    background-color: blue; /*del*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainmenu #logo {
+    display: block;
+    width: 190px;
+    height: 36px;
+    background-image: url(../static/img/brand.png);
+    background-repeat: no-repeat;
+}
+
+#mainmenu #selectmenu1 {
+    display: flex;
+    justify-content: space-around;
+    font: bold 16px/20px dotum;
+    letter-spacing: -2px;
+}
+
+#mainmenu #selectmenu1 li {
+    cursor: pointer;
+    width: 72px;
+    padding: 0 32px 0 33px;
+}
+
+#mainmenu #selectmenu1 li:hover {
+    color: blue;
+    border-bottom: 1px soild blue;
 }
