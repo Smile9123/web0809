@@ -94,10 +94,11 @@ header {
 #mainmenu #selectmenu1 li {
     cursor: pointer;
     width: 72px;
+
     padding: 0 32px 0 33px;
 }
 
 #mainmenu #selectmenu1 li:hover {
     color: blue;
-    border-bottom: 1px soild blue;
+    border-bottom: 2px soild blue;
 }
