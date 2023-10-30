@@ -5,13 +5,11 @@ header {
     height: 112px;
     display: flex;
     justify-content: center;
-    background-color: #eee; /*del*/
 }
 
 #headwrap {
     width: 1280px;
     height: 109px;
-    background-color: aquamarine; /*del*/
 }
 
 #loginmenu {
@@ -20,12 +18,21 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    font: normal 14px/1.5 NanumBarunGothic, Dotum;
+    font: normal 12px/1.5 NanumBarunGothic, Dotum;
 }
 
 #loginmenu #langmenu {
     display: flex;
     justify-content: right;
+}
+
+#langmenu p {
+    font-size: 5px;
+    padding-top: 5px;
+    color: #999;
+    margin-right: 10px;
+    padding-left: 4px;
+    cursor: pointer;
 }
 
 #langmenu .lang {
@@ -47,9 +54,14 @@ header {
 }
 
 #loginmenu #srch {
+    font-size: 16px;
     border-left: 1px solid #999;
     padding-left: 13px;
     padding-right: 16px;
+}
+
+#loginmenu #srch a {
+    color: #3378c1;
 }
 
 #loginmenu #reg1 {
@@ -92,13 +104,18 @@ header {
 }
 
 #mainmenu #selectmenu1 li {
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    width: 72px;
-
+    line-height: 75px;
+    margin-top: 10px;
+    width: 137px;
+    height: 75px;
     padding: 0 32px 0 33px;
+    box-sizing: border-box;
 }
 
 #mainmenu #selectmenu1 li:hover {
-    color: blue;
-    border-bottom: 2px soild blue;
+    color: #3378c1;
+    border-bottom: 2px solid #3378c1;
 }
