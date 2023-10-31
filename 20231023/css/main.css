@@ -171,11 +171,12 @@ main {
 
 #reserv ul .reservlistcommnet {
     font-size: 13px;
+    text-align: center;
     line-height: 18px;
     color: #fff;
 }
 
-#reserv ul .reservinput .reservnumber {
+#reserv ul .reservinput .reservnumber:nth-child(1) {
     margin-top: 20px;
     width: 141px;
     height: 32px;
@@ -186,9 +187,14 @@ main {
     background-color: #e3e3e4;
 }
 
-#reserv ul .reservbtton:nth-child(1) {
+#reserv ul .reservinput .reservnumber:nth-child(2) {
+    margin-top: 4px;
+}
+
+#reserv ul .reservbtton {
     width: 120px;
     height: 40px;
+    font-size: 16px;
     text-align: center;
     align-items: center;
     color: #fff;
