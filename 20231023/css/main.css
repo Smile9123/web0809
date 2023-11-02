@@ -206,7 +206,29 @@ main {
     height: 169px;
     margin: 0 auto;
     margin-top: 40px;
+    border: 1px solid #dfe1e5;
     background-color: darksalmon;
+}
+
+#selectmenu #selectmenu2 {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#selectmenu #selectmenu2 .menu2list {
+    font-size: 15px;
+    margin-top: 120px;
+    height: 169px;
+}
+
+#selectmenu #selectmenu2 .menu2list:nth-child(1),
+#selectmenu #selectmenu2 .menu2list:nth-child(2),
+#selectmenu #selectmenu2 .menu2list:nth-child(3),
+#selectmenu #selectmenu2 .menu2list:nth-child(4),
+#selectmenu #selectmenu2 .menu2list:nth-child(5),
+#selectmenu #selectmenu2 .menu2list:nth-child(6) {
+    border-right: #dfe1e5;
 }
 
 #main2 {
