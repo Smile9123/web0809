@@ -16,7 +16,7 @@ main {
     background-image: url(../static/img/main.jpg);
     width: 100%;
     height: 535px;
-    background-color: chartreuse;
+    cursor: pointer;
 }
 
 #mainimg #slideprev,
@@ -71,7 +71,6 @@ main {
     margin: 0 auto;
     margin-top: -124px;
     z-index: 1;
-    background-color: darkgreen;
 }
 
 #maininner #maininnerimg {
@@ -145,8 +144,45 @@ main {
     width: 1200px;
 }
 
+#reserv li:nth-child(1) {
+    background-color: #0b50a1;
+    background-image: url(../static/img/menulisticon1.png);
+    background-repeat: no-repeat;
+    background-position: -37px 120px;
+}
+
+#reserv li:nth-child(2) {
+    background-color: #11a0d8;
+    background-image: url(../static/img/menulisticon2.png);
+    background-repeat: no-repeat;
+    background-position: -20px 120px;
+}
+
+#reserv li:nth-child(3) {
+    background-color: #a5c564;
+    background-image: url(../static/img/menulisticon3.png);
+    background-repeat: no-repeat;
+    background-position: -7px 116px;
+}
+
+#reserv li:nth-child(4) {
+    background-color: #ef9e19;
+    background-image: url(../static/img/menulisticon4.png);
+    background-repeat: no-repeat;
+    background-position: -15px 120px;
+}
+
+#reserv li:nth-child(5) {
+    background-color: #8283db;
+    background-image: url(../static/img/menulisticon5.png);
+    background-repeat: no-repeat;
+    background-position: -18px 118px;
+}
+
 #reserv li {
     display: flex;
+    width: 240px;
+    height: 208px;
     flex-direction: column;
     align-items: center;
 }
@@ -157,16 +193,30 @@ main {
     color: #fff;
 }
 
+#reserv ul .reservlist:nth-child(3) .reservlisttitle {
+    padding: 25px 0 5px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
 #reserv ul .reservyellowbox {
     width: 139px;
     height: 22px;
     font-size: 12px;
     text-align: center;
+    line-height: 22px;
     letter-spacing: -1px;
-    margin-top: 4px;
+    margin: 6px auto 0 auto;
     border-radius: 13px;
     background-color: #f9e03d;
     color: #87b528;
+}
+
+#reserv ul .reservyellowbox2 {
+    position: relative;
+    display: block;
+    top: -18px;
+    left: 114px;
 }
 
 #reserv ul .reservlistcommnet {
@@ -176,29 +226,64 @@ main {
     color: #fff;
 }
 
-#reserv ul .reservinput .reservnumber:nth-child(1) {
+#reserv ul .reservinput .reservnumber1 {
     margin-top: 20px;
-    width: 141px;
-    height: 32px;
-    border: 0 none;
+    width: 135px;
+    height: 28px;
+    border: 1px solid;
     outline: none;
     text-align: center;
     font-size: 15px;
     background-color: #e3e3e4;
 }
 
-#reserv ul .reservinput .reservnumber:nth-child(2) {
+#reserv ul .reservinput .reservnumber2 {
     margin-top: 4px;
+    width: 135px;
+    height: 28px;
+    border: 1px solid;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    background-color: #e3e3e4;
 }
 
 #reserv ul .reservbtton {
-    width: 120px;
-    height: 40px;
-    font-size: 16px;
+    width: 137px;
+    height: 24px;
+    padding-top: 5px;
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 20px;
     text-align: center;
-    align-items: center;
     color: #fff;
     border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#reserv ul .reservlist:hover {
+    width: 230px;
+    height: 198px;
+    border: 5px solid #f9e03d;
+    .reservlisttitle {
+        color: #f9e03d;
+        font-size: 22px;
+    }
+    .reservbtton {
+        color: #f9e03d;
+        border: 1px solid #f9e03d;
+    }
+}
+
+#reserv ul .reservlist:nth-child(1) .reservbtton,
+#reserv ul .reservlist:nth-child(4) .reservbtton,
+#reserv ul .reservlist:nth-child(5) .reservbtton {
+    width: 118px;
+    height: 29px;
+    line-height: 19px;
+    margin-top: 47px;
+    padding-top: 9px;
+    font-size: 15px;
 }
 
 #selectmenu {
@@ -207,28 +292,56 @@ main {
     margin: 0 auto;
     margin-top: 40px;
     border: 1px solid #dfe1e5;
+    cursor: pointer;
     background-color: darksalmon;
 }
 
-#selectmenu #selectmenu2 {
+#selectmenu ul {
+    position: absolute;
     display: flex;
+    height: 169px;
+    flex-direction: row;
     list-style: none;
     justify-content: space-around;
 }
 
-#selectmenu #selectmenu2 .menu2list {
-    font-size: 15px;
-    margin-top: 120px;
-    height: 169px;
+#selectmenu ul li {
+    border: 1px solid #dfe1e5;
 }
 
-#selectmenu #selectmenu2 .menu2list:nth-child(1),
-#selectmenu #selectmenu2 .menu2list:nth-child(2),
-#selectmenu #selectmenu2 .menu2list:nth-child(3),
-#selectmenu #selectmenu2 .menu2list:nth-child(4),
-#selectmenu #selectmenu2 .menu2list:nth-child(5),
-#selectmenu #selectmenu2 .menu2list:nth-child(6) {
-    border-right: #dfe1e5;
+#selectmenu2 {
+    display: inline-block;
+    height: 100%;
+    background-image: url(../static/img/menu2list.png);
+    background-repeat: no-repeat;
+}
+
+#selectmenu ul .menu2list {
+    position: relative;
+    top: 120px;
+    font-size: 15px;
+    width: 170px;
+    height: 27px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+#selectmenu ul li:nth-child(2),
+#selectmenu ul li:nth-child(3),
+#selectmenu ul li:nth-child(4),
+#selectmenu ul li:nth-child(5) {
+    border-right: 1px solid #dfe1e5;
+}
+
+#selectmenu ul .menu2list:nth-last-child() {
+    border: none;
+}
+
+#containerclean {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
 }
 
 #main2 {
@@ -245,8 +358,36 @@ main {
     background-color: brown;
 }
 
+#main2left .main2noticetitle {
+    display: flex;
+    justify-content: space-between;
+    width: 579.541px;
+    height: 39px;
+    margin-bottom: 15px;
+}
+
+#main2left .main2noticetitle h4 {
+    font-size: 26px;
+    color: #555;
+}
+
+#main2left .main2noticetitle p {
+    width: 32.13px;
+    height: 18px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #44484f;
+    background-color: #e4e7ea;
+    font: normal 12px/1.5 NanumBarunGothic, Dotum;
+}
+
 .main2notice {
     width: 48.3%;
     height: 250px;
     background-color: blueviolet;
+}
+
+#main2left #main2nleftlist {
+    list-style: none;
 }

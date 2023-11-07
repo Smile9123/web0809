@@ -43,13 +43,13 @@ header {
     text-decoration: none;
 }
 
-#langmenu .lang:nth-child(1),
 #langmenu .lang:nth-child(2),
-#langmenu .lang:nth-child(3) {
+#langmenu .lang:nth-child(3),
+#langmenu .lang:nth-child(4) {
     border-right: 1px solid #999;
 }
 
-#langmenu .lang:nth-child(4) {
+#langmenu .lang:nth-child(5) {
     padding-right: 15px;
 }
 
