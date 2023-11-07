@@ -388,6 +388,11 @@ main {
     background-color: blueviolet;
 }
 
-#main2left #main2nleftlist {
+#main2left .ul {
+    list-style: none;
+    border: 1px solid black;
+}
+
+#main2left .main2leftlist {
     list-style: none;
 }
