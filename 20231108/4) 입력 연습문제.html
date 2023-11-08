@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var transportation = prompt("교통비를 입력해주세요 : ");
+            var food = prompt("식비를 입력해주세요 : ");
+            var moneySum = Number(transportation) + Number(food);
+            moneySum > 15000
+                ? document.write(moneySum - 15000 + "원을 초과하였습니다.")
+                : document.write("건전한 경제습관을 가지고 있습니다");
+        </script>
+    </head>
+    <body></body>
+</html>
