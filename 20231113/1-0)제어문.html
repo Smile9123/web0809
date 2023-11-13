@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var a = 5;
+            if (a >= 5) {
+                document.write("a는 5 이상입니다.<br>");
+            }
+            if (a < 5) {
+                document.write("a는 5보다 작습니다.<br>");
+            }
+
+            if (0) {
+                document.write("0<br>");
+            }
+            if (-1) {
+                document.write("-1<br>");
+            }
+
+            var num1 = 13;
+            if (num1 % 2 == 0) {
+                document.write(num1, "는 짝수입니다.<br>");
+            } else {
+                document.write(num1, "는 홀수입니다.<br>");
+            }
+
+            //var result = confirm("회원 탈퇴 하시겠습니까?");
+            var result = true;
+            if (result) {
+                document.write(
+                    "<p style='color:red;'>회원 탈퇴가 되었습니다.</p>"
+                );
+            } else {
+                document.write(
+                    "<p style='color:blue;'>회원 탈퇴가 취소되었습니다.</p>"
+                );
+            }
+
+            var num2 = 34;
+            if (num2 % 3 == 0) {
+                document.write(num2, "는 3의 배수입니다.<br>");
+            } else if (num2 % 3 == 1) {
+                document.write(num2, "를 3으로 나누면 나머지가 1입니다.<br>");
+            } else {
+                document.write(num2, "를 3으로 나누면 나머지가 2입니다.<br>");
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

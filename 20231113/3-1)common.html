@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var i = 1;
+            for (i; i <= 50; i++) {
+                if (i % 5 == 0 && i % 7 == 0) {
+                    document.write("<p style='color:green;'>");
+                } else if (i % 5 == 0) {
+                    document.write("<p style='color:red;'>");
+                } else if (i % 7 == 0) {
+                    document.write("<p style='color:blue;'>");
+                } else {
+                    document.write("<p style='color:black;'>");
+                }
+                document.write(i, "</p>");
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

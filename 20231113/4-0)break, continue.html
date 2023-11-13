@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            // for문을 이용해서 1~10까지 볼건데, 코드 내부에
+            //break를 이용해서 6까지만 출력되도록
+
+            var i = 1;
+
+            for (i; i <= 10; i++) {
+                document.write(i, "<br>");
+                if (i == 6) break;
+            }
+            for (i = 1; i <= 10; i++) {
+                if (i == 7) break;
+                document.write(i, "<br>");
+            }
+
+            //continue를 이용해서
+
+            for (var i = 1; i <= 10; i++) {
+                if (i >= 7) continue;
+                document.write(i, "<br>");
+            }
+
+            // continue를 이용해서 1~10까지에서 홀수만 출력되도록
+
+            for (var i = 1; i <= 10; i++) {
+                if (i % 2 == 0) continue;
+                document.write(i, "<br>");
+            }
+
+            for (var i = 1; i <= 4; i++) {
+                for (var j = 1; j <= 3; j++) {
+                    document.write("ㅁ");
+                }
+                document.write("<br>");
+            }
+
+            /*
+            <table border=1>
+                <tr>
+                    <td></td> <-실행
+                </tr>
+            </table>
+            */
+            document.write("<table border=1>");
+            for (var i = 1; 1 <= 4; i++) {
+                doucment.write("<tr>");
+                for (var j = 1; j <= 3; j++) {
+                    doucment.write("<td>0</td>");
+                }
+                doucment.write("</tr>");
+            }
+            doucment.write("</table>");
+        </script>
+    </head>
+    <body></body>
+</html>

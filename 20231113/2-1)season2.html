@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var month = prompt("월을 입력하세요 : ");
+            month = Number(month);
+
+            var color;
+            var name;
+            switch (month) {
+                case 3:
+                case 4:
+                case 5:
+                    color = "pink";
+                    name = "봄";
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    color = "green";
+                    name = "여름";
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    color = "orange";
+                    name = "가을";
+                    break;
+                case 12:
+                case 1:
+                case 2:
+                    color = "blue";
+                    name = "겨울";
+                    break;
+                default:
+                    color = "red";
+                    name = "오류";
+            }
+
+            document.write(
+                "<p style='color:",
+                color,
+                "'>",
+                name,
+                "입니다.</p>"
+            );
+        </script>
+    </head>
+    <body></body>
+</html>
