@@ -13,21 +13,21 @@
     background-color: brown;
 }
 
-#main2left .main2noticetitle {
+#main2left #main2noticetitle {
     display: flex;
     justify-content: space-between;
     width: 579.541px;
     height: 39px;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 
-#main2left .main2noticetitle h4 {
+#main2left #main2noticetitle h4 {
     font-size: 26px;
     color: #555;
 }
 
-#main2left .main2noticetitle p {
-    width: 32.13px;
+#main2left #main2noticetitle p {
+    width: 32.125px;
     height: 18px;
     padding: 10px;
     text-align: center;
@@ -43,11 +43,28 @@
     background-color: blueviolet;
 }
 
-#main2left .ul {
+#main2noticedetail ul {
     list-style: none;
+    width: 534.594px;
+    height: 184px;
+    padding: 11px 21px 0 21px;
     border: 1px solid black;
 }
 
-#main2left .main2leftlist {
-    list-style: none;
+#main2noticedetail ul .main2leftlsit {
+    color: #333;
+    padding-bottom: 10px;
+    text-align: left;
+    line-height: 5px;
+    font: normal 17px/1.5 NanumBarunGothic, Dotum;
+}
+
+#main2noticedetail ul .main2leftlsitdate {
+    color: #888;
+    display: block;
+    float: right;
+    padding-bottom: 10px;
+    line-height: 5px;
+    letter-spacing: -1px;
+    font: normal 14px/1.5 NanumBarunGothic, Dotum;
 }
