@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let user = prompt("가위, 바위, 보 중 하나를 입력하세요.");
+
+            let comp = Math.floor(Math.random() * 3 + 1);
+            switch (comp) {
+                case 1:
+                    comp = "가위";
+                    break;
+                case 2:
+                    comp = "바위";
+                    break;
+                case 3:
+                    comp = "보";
+                    break;
+            }
+            document.write("사용자 : ", user, "<br>");
+            document.write("컴퓨터 : ", comp, "<br>");
+            if (user == comp) {
+                document.write("<p style='color:green'>비겼습니다.</p>");
+            } else if (
+                (user == "가위" && comp == "보") ||
+                (user == "보" && comp == "바위") ||
+                (user == "바위" && comp == "가위")
+            ) {
+                document.write("<p style='color:blue'>당신이 이겼습니다.</p>");
+            } else {
+                document.write("<p style='color:red'>당신이 졌습니다.</p>");
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -116,4 +116,90 @@ setTime(); -> timestamp 값
 
 
 수학 객체 (Math)
-Math.abs 
+Math.abs (숫자)
+-> absolute (절댓값)
+-5 => 5, 7 => 7, -3.14 => 3.14
+
+Math.max (숫자 여려개) 
+-> maximum (최댓값)
+
+Math.min (숫자 여러개)
+-> minimum (최소값)
+
+Math.Pow(밑 수, 지수)
+Math.pow(2, 3) = 2의 3제곱 = 8
+-> power(거듭제곱 값)
+
+Math.random()
+-> 0 이상 1 미만의 소수 랜덤 값
+
+Math.ceil(수)
+-> celling (천장함수, 올림함수)
+-> 소수를 올림한 값
+
+Math.floor(수)
+-> floor (바닥함수, 내림함수)
+-> 소수를 내림한 값
+
+Math.round(수)
+-> 소수를 반올림한 값
+
+Math.sqrt(수)
+-> square root (제곱근)
+
+Math.cbrt(수)
+-> cube root (세제곱근)
+
+Math.PI(원주율(3.14)를 나타내는 함수)
+
+Math.random()을 정수 값으로 만들기
+
+10 이상 100 이하의 정수가 나오게 하고 싶다
+-> 0 이상 90 이하 (0 이상 91 미만) + 10
+
+Math.random() * 91 -> 0 이상 91 미만의 소수
+Math.random() * 91 + 10 -> 10 이상 101 미만의 소수
+Math.floor("") -> 10이상 101 미만의 정수
+
+[rsp.html]
+사용자 입력 -> 가위, 바위, 보
+
+컴퓨터 입력은 1이상 3이하의 랜덤 값
+1 -> 가위
+2 -> 바위
+3 -> 보
+
+사용자 : **
+컴퓨터 : **
+당신이 이겼습니다 (파란색)
+당신이 졌습니다 (빨간색)
+비겼습니다 (초록새)
+
+1 이상 3 이하
+-> 1 이상 4 미만
+-> (0 이상 3미만) +1
+(Math.random()*3)+1
+
+[progress.html]
+진척도를 promot 로 숫자만 입력 (%)
+10.5, 70
+
+만약 입력받은 숫자가 100 초과하거나 0 미만이면 alret를 이용해서 유효하지 않은 숫자임을 알림
+유효한 숫자라면 progress바를 띄워줌
+
+전체 너비를 300px로 해서 진척도만큼을 색칠
+높이 70px
+
+ex) 30%
+div 300px
+- div width : 90px
+- div width : 210px 
+
+색상
+20% 이하 red
+40% 이하 orange
+60% 이하 green
+80% 이하 blue
+100% 이하 purple
+
+소수점 내림으로 가운데에 % 써주기 (흰색으로)
