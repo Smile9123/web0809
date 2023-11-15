@@ -113,3 +113,7 @@ setMinutes();
 setSeconds();
 setMilliseconds();
 setTime(); -> timestamp 값
+
+
+수학 객체 (Math)
+Math.abs 

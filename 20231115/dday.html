@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let date = prompt("년, 월, 일을 yyyy/mm/dd 형태로 입력해주세요. ");
+            let dest = new Date(date);
+            let today = new Date();
+            today.setHours(0);
+            today.setMinutes(0);
+            today.setSeconds(0);
+            today.setMilliseconds(0);
+
+            let time1 = today.getTime();
+            let time2 = dest.getTime();
+            let diff = time2 - time1;
+            diff /= 24 * 60 * 60 * 1000;
+
+            document.write(
+                dest.getFullYear() +
+                    "년 " +
+                    (dest.getMonth() + 1) +
+                    "월 " +
+                    dest.getDate() +
+                    "일 (D"
+            );
+            if (diff == 0) {
+                document.write("-Day");
+            } else if (diff > 0) {
+                document.write("-" + diff + ")");
+            } else {
+                document.write("+" + diff * -1 + ")");
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
