@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let a = new Date();
+            document.write(a, "<br>");
+
+            let b = new Date("2023/11/17");
+            document.write(b, "<br>");
+
+            let c = new Date(2023, 11, 17);
+            document.write(c, "<br>");
+
+            document.write(a.getFullYear(), "<br>");
+            document.write(a.getUTCFullYear(), "<br>");
+            document.write(a.getMonth(), "<br>");
+            document.write(a.getDate(), "<br>");
+            document.write(a.getDay(), "<br>");
+            document.write(a.getHours(), "<br>");
+            document.write(a.getMinutes(), "<br>");
+            document.write(a.getSeconds(), "<br>");
+            document.write(a.getMilliseconds(), "<br>");
+            document.write(a.getTime(), "<br>");
+
+            document.write(a.toUTCString(), "<br>");
+            document.write(a.toLocaleString(), "<br>");
+            document.write(a.toLocaleString("en-us"), "<br>");
+            document.write(a.toLocaleString("ja-JP"), "<br>");
+
+            a.setFullYear(2025);
+            document.write(a, "<br>");
+        </script>
+    </head>
+    <body></body>
+</html>

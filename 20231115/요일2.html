@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let y = prompt("년도를 입력하세요 : ");
+            let m = prompt("월를 입력하세요 : ");
+            let d = prompt("일를 입력하세요 : ");
+
+            let a = new Date();
+            a.setFullYear(Number(y));
+            a.setMonth(Number(m) - 1);
+            a.setDate(Number(d));
+            document.write(y + "년 " + m + "월 " + d + "일은 ");
+            let b = "";
+            switch (a.getDay()) {
+                case 0:
+                    b = "일";
+                    break;
+                case 1:
+                    b = "월";
+                    break;
+                case 2:
+                    b = "화";
+                    break;
+                case 3:
+                    b = "수";
+                    break;
+                case 4:
+                    b = "목";
+                    break;
+                case 5:
+                    b = "금";
+                    break;
+                case 6:
+                    b = "토";
+                    break;
+            }
+            document.write(b + "요일입니다.<br>");
+        </script>
+    </head>
+    <body></body>
+</html>

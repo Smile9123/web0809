@@ -1,0 +1,115 @@
+객체 Object
+변수 : 값을 저장
+객체 : 속성(변수) + 기능(함수, 메소드)을 함께
+
+자바스크립트 : 객체 기반 스크립트 언어
+
+
+1. 내장 객체
+- 자바스크립트 엔진에 포함되어있는 객체
+날짜, 배열, 수학, 문자열, ...
+
+2. 브라우저 객체 모델 (Browser Object Model: BOM)
+- 브라우저에 내장되어 있는 객체
+window(document), screen, location, history, navigator
+
+3. 문서 객체 모델 (Document Object Model : DOM)
+- HTML 문서 구조
+HTML 문서에 있는 태그, 클래스, 아이디, name 값, 속성 값 등등
+
+var, let, const
+
+일반적으로 변수 사용 할 때
+먼저 선언 -> 사용
+
+var : 선언->사용 X, 코드 내부에서 어디서든 선언을 하고 어디서든 사용 가능 (호이스팅)
+(편하긴한데 코드가 꼬일 수 있다), 재선언 o
+
+let : 선언 -> 사용 o 재선언 x
+
+const : 상수 지정 -> 한 번 선언하면 바꿀 수 없다 (=재할당 불가능)
+
+
+
+
+내장 객체
+
+new 키워드 : 기본 객체를 생성하게 해주는 키워드
+
+var 객체변수 = new Object(); // 선언 
+객체변수.속성변수 = 속성변수값; // 생성
+객체변수.기능변수 = function(){
+    코드;
+};
+
+또는
+
+var 객체변수 = {
+    속성변수 : 속성변수값,
+    기능변수 : function(){
+        코드;
+    };
+};
+
+
+자바스크립트에서 함수 선언하기
+turnOn = function() { // 익명함수
+
+};
+
+function turnOn() { // 기명함수
+
+};
+
+turnOn();
+
+객체에서 내 객체에 속해있는 변수나 함수를 가져오기 위해서는 this 키워드를 사용 
+(파이썬에서의 self와 동일한 기능)
+
+
+날짜 객체 (Date)
+-> 날짜나 시간에 관련된 정보
+
+let 변수 = new Date();
+-> 현재 날짜/시간
+
+let 변수 = new Date("2023/11/17");
+-> 매개변수에 넣은 날짜 0시 0분 0초
+
+let 변수 = nwe Date(2023/11/17);
+-> 매개변수에 숫자로 넣으면 연, 일은 그대로 나옴
+그런데 월은 +1 되어서 나옴 (월이 0부터 시작됨)
+
+처음 생성할 때 new 객체이름(매개변수)
+-> 매개변수에 따라서 다른 값이 변수에 할당이 됨
+-> 생성자
+객체이름() -> 기본생성자
+객체이름(?) -> 생성자
+
+getFullYear(); -> 연
+getUTCFullYear(); -> 세계협정시 연
+getMonth(); -> 월 (-1)
+getDate(); -> 일
+getDay(); -> 요일 (일0, 월1, 화2, 수3, ...)
+getHours();
+getMinutes();
+getSeconds();
+getMilliseconds();
+getTime(); -> timestamp 값
+1970년 1월 1일 0시 0분 0초 (UTC기준)으로부터 현재까지 몇 밀리초가 흘렀는가
+toUTCString(); -> 세계협정 기준
+toLocaleString(); -> 현지 시간  표기법
+ko-KR : 한국, en-US : 미국, jp-JP : 일본 등
+
+
+날짜 수정하기
+setFullYear(); -> 연
+setUTCFullYear(); -> 세계협정시 연
+setMonth(); -> 월 (-1)
+setDate(); -> 일
+setDay(); -> 요일 (일0, 월1, 화2, 수3, ...)
+setHours();
+setMinutes();
+setSeconds();
+setMilliseconds();
+setTime(); -> timestamp 값

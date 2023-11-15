@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var tv = new Object(); // var, let, const
+            tv.color = "white";
+            tv.size = 72;
+            tv.price = 2900000;
+
+            //기능변수
+            tv.turnOn = function () {
+                document.write("TV를 켰다!<br>");
+            };
+            tv.turnOff = function () {
+                document.write("TV를 껐다!<br>");
+            };
+            tv.getInfo = function () {
+                document.write("TV의 색은 ", this.color, "<br>");
+                document.write("TV의 크기는 ", this.size, "<br>");
+                document.write("TV의 가격은 ", this.price, "<br>");
+            };
+
+            //2번 쨰 방법 const 쓸 때 많이 사용
+            const car = {
+                color: "black",
+                price: 100000000,
+                brand: "kia",
+                getInfo: function () {
+                    document.write("차의 색은 ", this.color, "<br>");
+                    document.write("차의 가격은 ", this.price, "<br>");
+                    document.write("차의 브랜드는 ", this.brand, "<br>");
+                },
+            };
+
+            tv.turnOn();
+            tv.turnOff();
+            tv.getInfo();
+            car.getInfo();
+        </script>
+    </head>
+    <body></body>
+</html>
