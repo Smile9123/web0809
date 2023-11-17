@@ -4,11 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        </style>
         <script>
-            let progress = prompt("진척도를 입력하세요.");
-            progress = Number(progress);
+            let prog = prompt("진척도를 입력해주세요.");
 
-            document.write("<div 'width:300px'> </div>");
+            prog = Number(prog);
+            if (prog > 100 || prog < 0) {
+                alert("유효하지 않는 수입니다.");
+            } else {
+                let progwidth = (300 * prog) / 100;
+                let otherwidth = 300 - progwidth;
+                document.write(
+                    "<div style='display: flex; width: 300px; height: 70px; margin: 10px;'>"
+                );
+                document.write(
+                    "<div style='width:",
+                    progwidth,
+                    "px; height: 100%; background-color: red; border: 1px solid black;'></div>"
+                );
+                document.write(
+                    "<div style='width:",
+                    otherwidth,
+                    "px; height: 100%; border: 1px solid black; border-left: none;'></div>"
+                );
+                document.write("</div>");
+            }
         </script>
     </head>
     <body></body>
