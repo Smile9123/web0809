@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let a = "JavaScript";
+
+            document.write(a[2], "<br>");
+            document.write(a.charAt(2), "<br>");
+            document.write(a.charCodeAt(2), "<br>");
+
+            document.write(a.indexOf("Sc"), "<br>");
+            document.write(a.indexOf("a"), "<br>");
+            document.write(a.indexOf("b"), "<br>");
+
+            document.write(a.lastIndexOf("Sc"), "<br>");
+            document.write(a.lastIndexOf("a"), "<br>");
+            document.write(a.lastIndexOf("b"), "<br>");
+
+            document.write(a.match("v"), "<br>");
+            document.write(a.match("va"), "<br>");
+            document.write(a.match("abcd"), "<br>");
+
+            document.write(a.replace("Script", "Language"), "<br>");
+
+            document.write(a.slice(2, 5), "<br>");
+            document.write(a.substring(2, 5), "<br>");
+            document.write(a.substr(2, 5), "<br>");
+
+            let str1 = "html!css!js";
+            let arr1 = str1.split("!");
+            document.write(arr1, "<br>");
+
+            document.write(a.toLowerCase(), "<br>");
+            document.write(a.toUpperCase(), "<br>");
+
+            document.write(a.length, "<br>");
+            document.write(a.concat("HTML"), "<br>");
+
+            let b = "    Java Script    ";
+            document.write(b.trim(), "<br>");
+
+            let char1 = String.fromCharCode(44032);
+            document.write(char1, "<br>");
+
+            let char2 = String.fromCharCode(55203);
+            document.write(char2, "<br>");
+
+            let unicode1 = 44032 + 6 * 588 + 13 * 28 + 4;
+            document.write(String.fromCharCode(unicode1), "<br>");
+        </script>
+    </head>
+    <body></body>
+</html>

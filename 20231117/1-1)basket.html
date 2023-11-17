@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let N = prompt("오늘 구매할 상품 종류의 수를 입력하세요");
+            N = Number(N);
+
+            let basket = new Array();
+            for (let i = 0; i < N; i++) {
+                let item = prompt("아이템을 입력하세요.");
+                basket.push(item);
+            }
+
+            document.write(basket, "<br>");
+            document.write(basket.sort(), "<br>");
+        </script>
+    </head>
+    <body></body>
+</html>

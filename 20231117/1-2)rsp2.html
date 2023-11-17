@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let comp1 = new Array();
+            let comp2 = new Array();
+            for (let i = 1; i <= 30; i++) {
+                let res1 = Math.floor(Math.random() * 3 + 1);
+                let res2 = Math.floor(Math.random() * 3 + 1);
+                comp1.push(res1);
+                comp2.push(res2);
+            }
+            document.write(comp1, "<br>");
+            document.write(comp2, "<br>");
+
+            let win = 0;
+            let draw = 0;
+            let lose = 0;
+            for (let i = 0; i < 30; i++) {
+                if (comp1[i] == comp2[i]) {
+                    draw++;
+                } else if (
+                    (comp1[i] == 1 && comp2[i] == 3) ||
+                    (comp1[i] == 2 && comp2[i] == 1) ||
+                    (comp1[i] == 3 && comp2[i] == 2)
+                ) {
+                    win++;
+                } else {
+                    lose++;
+                }
+                document.write("승 : ", win, "<br>");
+                document.write("무 : ", draw, "<br>");
+                document.write("패 : ", lose, "<br>");
+                document.write(
+                    "승률 : ",
+                    ((win / 30) * 100).toFixed(2),
+                    "%<br>"
+                );
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
