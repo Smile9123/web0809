@@ -132,3 +132,12 @@ userAgent
 아이패드 -> iPad
 안드로이드 -> Android
 기타 -> ?
+
+[halfcolor.html]
+screen 객체를 활용해서 화면의 세로 절반 크기만큼
+색깔을 채우되, 그 색이 1초마다 랜덤하게 바뀌도록
+사이트
+
+width, height -> screen 객체를 이용해서 설정
+background-color: rgb(랜덤, 랜덤, 랜덤)
+-> div 태그 1개만

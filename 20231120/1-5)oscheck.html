@@ -7,6 +7,34 @@
         <script>
             let oschange = setInterval(function () {
                 document.body.innerHTML = "";
+
+                let userAgent = navigator.userAgent;
+                let oslogo = "";
+
+                if (userAgent.includes("Windows")) {
+                    oslogo = "/img/windows.png";
+                } else if (userAgent.includes("iMac")) {
+                    oslogo = "/img/mac.jpg";
+                } else if (userAgent.includes("iPhone")) {
+                    oslogo = "/img/iphone.jpg";
+                } else if (userAgent.includes("iPad")) {
+                    oslogo = "/img/ipad.jpg";
+                } else if (userAgent.includes("Android")) {
+                    oslogo = "/img/android.jpg";
+                } else {
+                    oslogo = "/img/question.jpg";
+                }
+
+                document.write("<img src ='", oslogo, "',width=250><br>");
+                document.write(
+                    "현재 창의 크기 : ",
+                    window.outerWidth,
+                    "px x ",
+                    window.innerWidth,
+                    "px<br>"
+                );
+                let current = new Date();
+                document.write("현재 시간: ", current, "<br>");
             }, 1000);
         </script>
     </head>
