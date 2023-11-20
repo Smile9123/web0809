@@ -12,20 +12,20 @@
                 let oslogo = "";
 
                 if (userAgent.includes("Windows")) {
-                    oslogo = "/img/windows.png";
-                } else if (userAgent.includes("iMac")) {
-                    oslogo = "/img/mac.jpg";
+                    oslogo = "./img/windows.png";
+                } else if (userAgent.includes("Macintosh")) {
+                    oslogo = "./img/mac.jpg";
                 } else if (userAgent.includes("iPhone")) {
-                    oslogo = "/img/iphone.jpg";
+                    oslogo = "./img/iphone.jpg";
                 } else if (userAgent.includes("iPad")) {
-                    oslogo = "/img/ipad.jpg";
+                    oslogo = "./img/ipad.jpg";
                 } else if (userAgent.includes("Android")) {
-                    oslogo = "/img/android.jpg";
+                    oslogo = "./img/android.jpg";
                 } else {
-                    oslogo = "/img/question.jpg";
+                    oslogo = "./img/question.jpg";
                 }
 
-                document.write("<img src ='", oslogo, "',width=250><br>");
+                document.write("<img src='", oslogo, "'width=250><br>");
                 document.write(
                     "현재 창의 크기 : ",
                     window.outerWidth,
