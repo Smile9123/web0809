@@ -4,7 +4,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <script></script>
+        <script>
+            let change = setInterval(function () {
+                document.body.innerHTML = "";
+                let width = window.width / 2;
+                let height = window.height;
+
+                let red = Math.floor(Math.random() * 256);
+                let green = Math.floor(Math.random() * 256);
+                let blue = Math.floor(Math.random() * 256);
+
+                let styleTag =
+                    "width: " +
+                    width +
+                    "px; height: " +
+                    height +
+                    "px; background-color: rgb(" +
+                    red +
+                    ", " +
+                    green +
+                    ", " +
+                    blue +
+                    ");";
+                document.write("<div style'",styleTag,"'></div)";
+            });
+        </script>
     </head>
     <body></body>
 </html>
