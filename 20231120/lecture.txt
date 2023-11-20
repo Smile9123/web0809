@@ -1,0 +1,55 @@
+브라우저 객체 모델 (Browser Object Model : BOM)
+window (브라우저 창)
+- document
+- screen
+- location
+- history
+- navigator
+
+
+window 객체 : 브라우저 창을 다루는 객체
+- open(url, 이름, 옵션)
+옵션
+ - width = 너비
+ - height = 높이
+ - left = 화면에서 왼쪽으로부터 얼마나 띄울건지
+ - top = 화면에서 위로부터 얼마나 띄울건지\
+ - scrollbars = 스크롤바 여부 (yes, no)
+- alert(메시지): 경고창
+- prompt(질문, 디폴트답변): 질의창
+- confirm(질문): 확인/취소
+- setInterval: 일정 시간 간격으로 코드를 실행
+  -> setInterval을 멈추려면 clearInterval이 필요
+- setTimeout: 일정 시간 후에 코드를 실행
+let 변수 = setInterval(function() {
+    코드
+},  시간코드(ms));
+
+clearInterval(변수);
+
+console.log(메시지): 콘솔 창에 로그를 남기는 함수
+
+window.outerWidth
+window.outerHeight
+-> html 외부의 윈도우 창의 UI까지 포함한 크기
+
+window.innerWidth
+widnow.innerHeight
+-> html만의 크기
+
+
+[count.html]
+setInterval과 별도의 변수를 이용해서 1부터 40까지 출력이 되는데 출력 간격은 1초,
+출력 할 때 글씨의 크기가 숫자와 비례하도록(1 -> 1px, 5 -> 5px, 20 -> 20px)
+
+screen 객체
+: 사용자의 모니터 정보를 가져오는 객체
+screen.width
+screen.height
+-> 내 모니터의 크기
+
+screen.availWidth
+screen.availheight
+-> 작업표시줄을 제외한 내 모니터의 크기
+
+screen.colorDepth
