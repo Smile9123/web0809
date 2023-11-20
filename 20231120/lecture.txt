@@ -53,3 +53,82 @@ screen.availheight
 -> 작업표시줄을 제외한 내 모니터의 크기
 
 screen.colorDepth
+-> 모니터에서 표현할 수 있는 컬러 비트의 수
+screen.pixelDepth
+-> 모니터에서 표현할 수 있는 픽셀 당 비트의 수
+rgb -> (0~255) -> 256가지 = 2^8가지 x 3 -> 24비트
+
+
+location 객체
+: 사용자의 브라우저 정보와 관련된 객체
+
+location.href -> 사용자의 현재 위치의 URL을 통째로 가져오는 것
+~.hash -> url에서 # 뒤의 값
+~.hostname -> url에서 주소 값만
+~.host -> 주소 + 포트 번호 (주소 뒤에 : 뒤에 붙은 숫자)
+~.protocol -> // 앞의 값
+~.search -> ? 뒤의 값 (쿼리)
+
+location.reload() -> 새로고침
+
+
+history 객체
+: 사용자가 방문한 사이트 기록
+(이전 방문, 다음 방문으로도 이동 가능)
+
+history.back() -> 이전 방문 사이트로 이동
+~.forward() -> 다음 방문 사이트로 이동
+~.go(숫자) -> 숫자 단계 이전/다음으로 이동
+  .go(-2) -> 2단계 이전, .go(3) -> 3단계 이후
+~.length -> 방문 기록의 길이
+
+naver.com
+naver.com/login <= history.go(-2)
+naver.com/cafe <= history.back()
+naver.com/blog <= 현재상태
+gmail.com      <= history.foward()
+sbsart.com
+sbsart.com/portfolio <= history.go(3)
+
+history.length -> 7
+
+
+*** navigator 객체 ***
+-> 현재 사이트 방문자의 브라우저 정보 + 운영체제 정보
+
+콘솔 창에서 navigator.userAgent를 쳐보면 현재 방문자(나)의 브라우저 운영체제
+정보를 확인할 수 있음
+
+User Agnet: 사이트에서 접속을 할 때 기기나 브라우저 등의 사용자의 소프트웨어
+정보를 담고  있는 것 (무조건 정해진 값 -> 사용자가 임의로 수정 x)
+
+Mozilla/버전 + 운영체제 + 내 엔진 + 브라우저
+
+PC크롬:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) < Mozilla, 운영체제
+AppleWebKit/537.36 (KHTML, like Gecko) < 내 엔진
+Chrome/119.0.0.0
+Safari/537.36
+
+-> 안드로이드 유저랑 아이폰 유저에게 보이는 창을 다르게 하고 싶다
+
+[oscheck.html]
+창 초기화
+document.body.innerHTML = "";
+
+navigator 객체와 screen 객체를 활용해서 현재 사용자의
+디바이스 (윈도우, 맥, 아이폰, 안드로이드, 기타)와 창의
+크기를 출력해주는 웹페이지
+(실시간을 바뀌게 -> 1초마다 다시 작성)
+
+디바이스는 글씨가 아닌 사진으로 출력되게
+
+Date 객체랑 window 객체 활용해서 현재 시간을 초 단위로 표시 (1초마다 바뀌게)
+
+userAgent
+윈도우 -> Windows
+맥 -> Macintosh
+아이폰 -> iPhone
+아이패드 -> iPad
+안드로이드 -> Android
+기타 -> ?

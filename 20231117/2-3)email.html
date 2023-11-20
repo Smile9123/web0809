@@ -22,24 +22,26 @@
                             if (domain.length >= 3) {
                                 document.write(
                                     usermail,
+                                    "는 유효한 이메일입니다.<br>"
+                                );
+                            } else {
+                                document.write(
+                                    usermail,
                                     "는 유효하지 않는 이메일입니다.<br>"
+                                );
+                                document.write(
+                                    "조건 4. 도메인을 제외한 @ 뒤쪽 문자의 개수가 3개 이상이어야 하는데, 반드시 영어 대소문자, 숫자, 한글로만 이루어져야 함"
                                 );
                             }
                         }
                     } else {
-                        document.write(
-                            usermail,
-                            "는 유효하지 않는 이메일입니다.<br>"
-                        );
+                        document.write(usermail, "는 유효한 이메일입니다.<br>");
                         document.write(
                             "조건 2. @앞에 적어도 3자리 이상의 문자 (영어 대소문자, 숫자)가 있어야 한다.<br>"
                         );
                     }
                 } else {
-                    document.write(
-                        usermail,
-                        "는 유효하지 않는 이메일입니다.<br>"
-                    );
+                    document.write(usermail, "는 유효한 이메일입니다.<br>");
                     document.write(
                         "조건 4. 도메인을 제외한 @ 뒤쪽 문자의 개수가 3개 이상이어야 하는데, 반드시 영어 대소문자, 숫자, 한글로만 이루어져야 함"
                     );
