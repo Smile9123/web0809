@@ -4,6 +4,29 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <script>
+            function ProductInfo(code, name, price) {
+                this.ProductCode = code;
+                this.ProductName = name;
+                this.ProductPrice = price;
+
+                this.getInfo = function () {};
+            }
+
+            let iphone = new ProductInfo("aaa001", "iPhone 15", 2000000);
+            let galaxyfold = new ProductInfo(
+                "bbb002",
+                "Galaxy Z Fold 5",
+                1500000
+            );
+            let ipadpro = new ProductInfo("ccc003", "iPad Pro M2", 2200000);
+        </script>
     </head>
-    <body></body>
+    <body>
+        <img src="" id="itemImage" />
+        <p id="itemPrice"></p>
+        <button onclick="iphone.getInfo();">iPhone 15</button>
+        <button onclick="galaxyfold.getInfo();">Galaxy Z Fold 5</button>
+        <button onclick="ipadpro.getInfo();">iPad Pro M2</button>
+    </body>
 </html>

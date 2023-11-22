@@ -143,4 +143,5 @@ iapdpro 변수 (코드:bbb003)
 
 -> 버튼을 눌렀을 때
 상품 사진, 상품 가격
-창 초기화 (document.body.innerHTML = "";)
+-> img 태그의 src 속성 변경과
+#itemPrice 의 innerHTML 값 변경
