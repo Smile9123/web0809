@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            function sayHello() {
+                document.write("안녕하세요<br>");
+            }
+
+            let sayHi = function () {
+                document.write("안녕<br>");
+            };
+            sayHello();
+            sayHello();
+            sayHello();
+            sayHi();
+            sayHi();
+
+            sayBye();
+            sayBye();
+            sayBye();
+            sayGoodBye(); //실행안됨
+            sayGoodBye(); //실행안됨
+            sayGoodBye2(); //실행안됨
+            sayGoodBye2(); //실행안됨
+
+            function sayBye() {
+                document.write("잘가<br>");
+            }
+
+            let sayGoodBye = function () {
+                document.write("안녕히가세요<br>");
+            };
+
+            var sayGoodBye2 = function () {
+                document.write("안녕히가세요2<br>");
+            };
+        </script>
+    </head>
+    <body></body>
+</html>

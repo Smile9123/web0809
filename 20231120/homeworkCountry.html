@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            let country = navigator.language;
+            let flag = "";
+
+            if (country.includes("KR")) {
+                flag = "./img/korea.png";
+            } else if (country.includes("JP")) {
+                flag = "./img/japan.png";
+            } else if (country.includes("US")) {
+                flag = "./img/america.png";
+            } else if (country.includes("GB")) {
+                flag = "./img/england.png";
+            } else {
+                flag = "./img/question.png";
+            }
+            document.write("<img src='", flag, "'width=250px>");
+        </script>
+    </head>
+    <body></body>
+</html>
