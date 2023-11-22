@@ -130,3 +130,17 @@ HTML 70
 상품이름
 상품가격
 상품이미지
+
+iPhone 변수 (코드:aaa001)
+galaxyfold 변수 (코드:bbb002)
+iapdpro 변수 (코드:bbb003)
+
+[iPhone 15]
+[Galaxy Z Fold 5]
+[iPad Pro M2]
+
+이미지는 ./img/상품코드.jpg
+
+-> 버튼을 눌렀을 때
+상품 사진, 상품 가격
+창 초기화 (document.body.innerHTML = "";)
