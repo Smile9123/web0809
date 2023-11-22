@@ -113,8 +113,20 @@ style이 display: None -> display: block;
 [성적입력] -> 클릭시 inputScore 실행
 ===
 
+===
 C언어 100
 파이썬 90
 자바 80
 HTML 70
 평균 85
+===
+
+
+
+[product.html]
+상품 객체 생성자 함수
+<변수>
+상품코드
+상품이름
+상품가격
+상품이미지
