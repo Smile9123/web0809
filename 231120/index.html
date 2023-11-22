@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.open("https://sbsart.com", "SBS아트학원", "width=300, height=300, left=100, top=100, scrollbars=no");
+
+        let count = 0;
+        let hello = setInterval(function() {
+            document.write("Hello!<br>");
+            console.log("Hello");
+            count++;
+            if(count == 10) {
+                clearInterval(hello);
+            }
+        }, 500);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

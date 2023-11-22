@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let usermail = prompt("이메일을 입력하세요.");
+
+        if(usermail.includes('@')) {
+            let emailsplit = usermail.split('@');
+            if(emailsplit.length == 2) {
+                if(emailsplit[0].length >= 3) {
+                    if(emailsplit[1].endsWith('.co.kr') || emailsplit[1].endsWith('.com') || emailsplit[1].endsWith('.net') || emailsplit[1].endsWith('.org') || emailsplit[1].endsWith('.or.kr')) {
+                        let domain = emailsplit[1].split('.')[0];
+                        if(domain.length >= 3) {
+                            document.write(usermail, "는 유효한 이메일입니다.");
+                        }
+                        else {
+                            document.write(usermail, "는 유효하지 않는 이메일입니다.<br>");
+                            document.write("조건 4. 도메인을 제외한 @ 뒤쪽 문자의 개수가 3개 이상이어야 하는데, 반드시 영어 대소문자, 숫자, 한글로만 이루어져야 함<br>");
+                        }
+                    }
+                    else {
+                        document.write(usermail, "는 유효하지 않는 이메일입니다.<br>");
+                        document.write("조건 3. 도메인이 .co.kr, .com, .net, .org, .or.kr 로 끝나야 한다<br>");
+                    }
+                }
+                else {
+                    document.write(usermail, "는 유효하지 않는 이메일입니다.<br>");
+                    document.write("조건 2. @ 앞에 적어도 3자리 이상의 문자 (영어 대소문자, 숫자)가 있어야 한다<br>");
+                }
+            }
+            else {
+                document.write(usermail, "는 유효하지 않는 이메일입니다.<br>");
+                document.write("조건 4. 도메인을 제외한 @ 뒤쪽 문자의 개수가 3개 이상이어야 하는데, 반드시 영어 대소문자, 숫자, 한글로만 이루어져야 함<br>");
+            }
+        }
+        else {
+            document.write(usermail, "는 유효하지 않는 이메일입니다.<br>");
+            document.write("조건 1. @이 반드시 있어야 한다<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
