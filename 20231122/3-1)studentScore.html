@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            function StudentInfo(name, grade) {
+                this.studentName = name;
+                this.studentGrade = grade;
+                this.subjectCount;
+                this.subjectName = new Array();
+                this.subjecScore = new Array();
+
+                this.inputSubject = function () {
+                    this.subjectCount = Number(prompt("과목 수를 입력하세요."));
+                    for (let i = 0; i < this.subjectCount; i++) {
+                        let subject = prompt("과목을 입력하세요.");
+                        this.subjectName.push(subject);
+                    }
+                    document.body.innerHTML +=
+                        "<button onclick = 'student.inputScore()'> 성적입력 </button>";
+                };
+            }
+
+            let name = prompt("이름을 입력하세요. ");
+            let grade = Number(prompt("학년을 입력하세요."));
+            let student = new StudentInfo(name, grade);
+            document.write(
+                student.studentName + "(" + student.studentGrade + ")<br>"
+            );
+            document.write(
+                "<button onclick = 'student.inputSubject()'> 과목입력 </button>"
+            );
+        </script>
+    </head>
+    <body></body>
+</html>

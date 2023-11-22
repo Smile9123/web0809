@@ -6,20 +6,37 @@
         <title>Document</title>
     </head>
     <body>
-        <button>&lt;</button>
-        <button>&gt;</button>
+        <button onclick="move(-1)">&lt;</button>
+        <button onclick="move(1)">&gt;</button>
         <div id="container">
             <img src="./img/clock_1.png" />
-            <img src="./img/clock_2.png" />
-            <img src="./img/clock_3.png" />
-            <img src="./img/clock_4.png" />
-            <img src="./img/clock_5.png" />
         </div>
 
         <script>
-            let imgElem = document.querySelector("#container > img");
-            console.log(imgElem);
-            console.log(imgElem.getAttribute("src"));
+            function move(direction) {
+                let imgElem = document.querySelector("#container > img");
+                let imgSrc = imgElem.getAttribute("src");
+                // ./img/clock_1.png
+                let clockNum = imgSrc.split("_")[1];
+                //[0] -> ./img.clock
+                //[1] -> 1.png
+
+                clockNum = Number(clockNum.split(".")[0]);
+                // [0] -> 1
+                // [1] -> png
+
+                if (direction == -1) {
+                    clockNum -= 1;
+                    if (clockNum == 0) {
+                        clockNum = 12;
+                    }
+                } else {
+                    clockNum += 1;
+                    if (clockNum == 13) clockNum = 1;
+                }
+
+                imgElem.setAttribute("src", "./img/clock_" + clockNum + ".png");
+            }
         </script>
     </body>
 </html>
