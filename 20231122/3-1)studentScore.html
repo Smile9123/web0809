@@ -21,6 +21,42 @@
                     document.body.innerHTML +=
                         "<button onclick = 'student.inputScore()'> 성적입력 </button>";
                 };
+
+                this.inputScore = function () {
+                    for (let i = 0; i < this.subjectCount; i++) {
+                        let score = Number(
+                            prompt(
+                                this.subjectName[i] +
+                                    "과목의 성적을 입력하세요."
+                            )
+                        );
+                        this.subjecScore.push(score);
+                    }
+                    document.body.innerHTML +=
+                        "<button onclick = 'student.scoreAnalysis()'> 성적분석 </button><br>";
+                };
+
+                this.getAverage = function () {
+                    let average = 0;
+                    for (let i = 0; i < this.subjectCount; i++) {
+                        average += this.subjecScore[i];
+                    }
+                    average /= this.subjectCount;
+                    return average;
+                };
+
+                this.scoreAnalysis = function () {
+                    for (let i = 0; i < this.subjectCount; i++) {
+                        document.body.innerHTML +=
+                            "<p>" +
+                            this.subjectName[i] +
+                            " " +
+                            this.subjecScore[i] +
+                            "</p>";
+                    }
+                    document.body.innerHTML +=
+                        "<p>평균 " + this.getAverage() + "</p>";
+                };
             }
 
             let name = prompt("이름을 입력하세요. ");
