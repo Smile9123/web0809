@@ -175,5 +175,5 @@ nodeType
 - !DOCTYPE -> 14
 selectedIndex -> select-option 등에서 몇 번째 요소가
 선택되었는지
-
+defaultValue -> input 태그 들에서 기본적으로 설정한 값
 
