@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            $(function () {
+                $("a[href^='https']").css("color", "red");
+                $("a[href$='.net']").css("color", "black");
+                $("a[href*='naver']").css("color", "green");
+                $("a[href*='naver']").css({
+                    color: "green",
+                    "background-color": "gray",
+                });
+
+                $("#line_1").find(".sta_1").css("background-color", "red");
+                $("#line_1 p")
+                    .filter(".sta_2")
+                    .css("background-color", "green");
+
+                $("#line_2 p")
+                    .filter(function (i, v) {
+                        if (i % 2 == 1) return true;
+                        else return false;
+                    })
+                    .css("background-color", "yellow");
+
+                $("#line_3 p:contains(연신내)").css(
+                    "background-color",
+                    "orange"
+                );
+
+                $("#line_3 p:has(strong)").css("background-color", "pink");
+
+                $("#line_3 p").not(":first").css("border", "1px solid black");
+
+                let vis1 = $("#line_4 p").eq(0).is(":visible");
+                console.log("혜화", vis1);
+
+                let vis2 = $("#line_4 p ").eq(1).is(":visible");
+                console.log("동대문", vis2);
+
+                let chk1 = $("#mapo").is(":checked");
+                console.log("마포", chk1);
+
+                let chk2 = $("#gongduk").is(":checked");
+                console.log("공덕", chk2);
+
+                $("#mapo").prop("checked", false);
+            });
+        </script>
+    </head>
+    <body>
+        <a href="https://google.com">구글 바로가기</a><br />
+        <a href="http://naver.com">네이버 바로가기</a><br />
+        <a href="https://sbsart.com">SBS아카데미 바로가기</a><br />
+        <a href="https://abc.co.kr">ABC 바로가기</a><br />
+        <a href="http://def.net">DEF 바로가기</a><br />
+
+        <section id="line_1">
+            <h2>1호선</h2>
+            <p class="sta_1">신설동</p>
+            <p class="sta_2">제기동</p>
+            <p class="sta_3">청량리</p>
+        </section>
+
+        <section id="line_2">
+            <h2>2호선</h2>
+            <p>뚝섬</p>
+            <p>성수</p>
+            <p>건대입구</p>
+            <p>구의</p>
+        </section>
+
+        <section id="line_3">
+            <h2>3호선</h2>
+            <p>연신내</p>
+            <p><strong>불광</strong></p>
+            <p>녹번</p>
+        </section>
+
+        <section id="line_4">
+            <h2>4호선</h2>
+            <p>혜화</p>
+            <p style="display: none">동대문</p>
+        </section>
+
+        <section id="line_5">
+            <h2>5호선</h2>
+            <input type="checkbox" name="mapo" id="mapo" checked />
+            <label for="mapo">마포</label>
+            <input type="checkbox" name="gongduk" id="gongduk" />
+            <label for="gongduk">공덕</label>
+        </section>
+    </body>
+</html>

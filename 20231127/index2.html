@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            window.onload = function () {
+                let company = document.querySelectorAll("#gallery img");
+                for (let i in company) {
+                    if (company[i].getAttribute("id") == "samsung") {
+                        console.log(i);
+                        company[i].setAttribute("alt", "삼성");
+                        break;
+                    }
+                }
+            };
+
+            $(function () {
+                let company2 = $("#gallery img");
+                company2.each(function (i, v) {
+                    if (
+                        $("#gallery img:nth-child(" + (i + 1) + ")").attr(
+                            "id"
+                        ) == "huawei"
+                    ) {
+                        console.log(i);
+                        $("#gallery img:nth-child(" + (i + 1) + ")").attr(
+                            "alt",
+                            "화웨이"
+                        );
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="gallery">
+            <img src="./img/apple.png" alt="apple" id="apple" />
+            <img src="./img/samsung.png" alt="samsung" id="samsung" />
+            <img src="./img/lg.png" alt="lg" id="lg" />
+            <img src="./img/huawei.png" alt="huawei" id="huawei" />
+        </div>
+    </body>
+</html>
