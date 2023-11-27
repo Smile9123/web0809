@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>음식 종류</h1>
+        <section id="food_1">
+            <h2>한식</h2>
+            <ul>
+                <li>김치볶음밥</li>
+                <li>불고기</li>
+            </ul>
+        </section>
+
+        <section id="food_2">
+            <h2>일식</h2>
+            <ul>
+                <li>초밥</li>
+                <li>우동</li>
+                <li>스시</li>
+            </ul>
+        </section>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            let korea = document.querySelector("#food_1 h2");
+            korea.style.color = "red";
+
+            let korea2 = $("#food_1 h2");
+            korea2.css("color", "red");
+
+            let japan = document.querySelectorAll("#food_2 ul li");
+            japan.forEach(function (food) {
+                console.log(food.innerText);
+            });
+
+            let japan2 = $("#food_2 ul li");
+            japan2.each(function (i, food) {
+                console.log(i, food.innerText);
+            });
+
+            let china = new Array("짜장면", "짬뽕", "탕수육");
+            let china2 = $.map(china, function (a, b) {
+                return a + " " + b;
+            });
+            console.log(china2);
+
+            let europe = [
+                { country: "france", food: "gratin" },
+                { country: "italy", food: "pizza" },
+                { country: "england", food: "fish and chips" },
+            ];
+            europe.forEach(function (a) {
+                console.log(a);
+                console.log(a.country + "의 대표 음식은 " + a.food);
+            });
+
+            let line_1 = new Array("용산", "남영", "서울역", "시청");
+
+            let seoulIdx = $.inArray("서울역", line_1);
+            console.log("서울역은 " + seoulIdx + "번 인덱스");
+
+            let jongIdx = $.inArray("종각", line_1);
+            console.log("종각은 " + jongIdx + "번 인덱스");
+
+            let line_1_a = "1호선";
+            console.log("line_1은 배열인가?", $.isArray(line_1));
+            console.log("line_1_a은 배열인가?", $.isArray(line_1_a));
+
+            let line_1_b = new Array("종각", "종로3가");
+            let merge_line_1 = $.merge(line_1, line_1_b);
+            $.each(merge_line_1, function (i, v) {
+                console.log(i, v);
+            });
+        </script>
+    </body>
+</html>

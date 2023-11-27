@@ -9,17 +9,25 @@
                 this.ProductCode = code;
                 this.ProductName = name;
                 this.ProductPrice = price;
+                this.ProductImage;
 
-                this.getInfo = function () {};
+                this.getInfo = function () {
+                    this.ProductImage = "./img/" + this.ProductCode + ".jpg";
+                    document
+                        .querySelector("#itemImage")
+                        .setAttribute("src", this.ProductImage);
+                    document.querySelector("#itemPrice").innerHTML =
+                        this.ProductPrice + "원";
+                };
             }
 
             let iphone = new ProductInfo("aaa001", "iPhone 15", 2000000);
             let galaxyfold = new ProductInfo(
                 "bbb002",
                 "Galaxy Z Fold 5",
-                1500000
+                1800000
             );
-            let ipadpro = new ProductInfo("ccc003", "iPad Pro M2", 2200000);
+            let ipadpro = new ProductInfo("ccc003", "iPad Pro M2", 2300000);
         </script>
     </head>
     <body>
