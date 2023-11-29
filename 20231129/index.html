@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrap {
+                width: 300px;
+                height: 200px;
+                margin: 50px auto;
+                position: relative;
+                background-color: aqua;
+            }
+            .box {
+                width: 50px;
+                height: 60px;
+                position: absolute;
+                left: 100px;
+                top: 50px;
+                border: 5px solid black;
+                padding: 10px;
+                background-color: blue;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(function () {
+                let box = $(".box");
+                console.log(box.width(), box.height());
+                console.log(box.innerWidth(), box.innerHeight());
+                console.log(box.outerWidth(), box.outerHeight());
+                console.log(box.position().left, box.position().right);
+                console.log(box.position().top, box.position().bottom);
+
+                let text1 = $(".text_1 span");
+                let text2 = $(".text_2 span");
+
+                text1.text(box.offset().top);
+                text2.text(box.position().top);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <p class="box">박스</p>
+        </div>
+        <p class="text_1">절대 top 값: <span></span></p>
+        <p class="text_2">상대 top 값: <span></span></p>
+    </body>
+</html>

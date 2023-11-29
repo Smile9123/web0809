@@ -1,0 +1,66 @@
+CSS 파트
+전체를 감싸는 #wrap
+-> 너비 80%, 가운데
+
+
+
+#basketAdd
+-> grid로 설정
+2행 4열
+
+너비 비율 1:4:2:1
+상품추가 상품명 개당가격 추가버튼
+        판매자  개수
+
+
+
+#couponAdd
+-> grid로 설정
+1행 4열
+
+너비 비율 1:4:2:1
+쿠폰추가 쿠폰이름 할인율 추가버튼
+
+
+#basketList
+위 아래 3px border
+
+#basketList li
+-> grid로 설정
+1행 5열
+
+너비 비율 5:3:3:3:1
+
+
+
+#basketFooter
+margin-top:10px
+padding: 양 옆에 5px
+배치는 양쪽 배치 (flex)
+
+기본 16px
+div의 글씨 크기는 1.4em(16*1.4)
+div안의 span 글씨는 1.2em(16*1.4*.12)빨간색
+
+
+
+#couponWrap > #couponSelect
+배치 양쪽 배치 (flex)
+height 30px
+margin-bottom 15px
+  height 100%
+  #coupon -> width 50%
+  button -> width 20%
+
+
+
+#couponWrap > #couponPrice
+-> grid로 설정
+
+1행 5열
+8:1:8:1:8
+
+#couponPrice > div
+내부는 전부 가운데 정리 (세로, 가로 전부) (flex)
+#couponPrice > div > span
+색상 red, padding 양쪽 10px, font-size: 1.4em

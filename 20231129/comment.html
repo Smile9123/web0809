@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .under {
+                text-decoration: underline;
+            }
+            #textScreen {
+                height: 100px;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            function changeColor() {
+                let color = prompt("색상을 입력하세요. ");
+                let text = $("#textScreen");
+                text.css("color", color);
+            }
+
+            function ulToggle() {
+                $("#textScreen").toggleClass("under");
+            }
+
+            function textCopy() {
+                let original = $("#textScreen").text();
+                $("#textScreen").text(original + original);
+            }
+
+            function newText() {
+                let input = prompt("새 택스트를 입력하세요. ");
+                $("#textScreen").text(input);
+            }
+
+            function fontSize(mode) {
+                let size = $("#textScreen").css("font-size");
+                size = Number(size.replace("px", ""));
+                size += mode;
+                $("#textScreen").css("font-size", size + "px");
+            }
+        </script>
+    </head>
+    <body>
+        <p id="textScreen">텍스트</p>
+        <div>
+            <button onclick="changeColor();">색상 변경</button>
+            <button onclick="ulToggle();">밑줄 토글</button>
+            <button onclick="textCopy();">텍스트 복제</button>
+            <button onclick="newText();">텍스트 새로 쓰기</button>
+            <button onclick="fontSize(-1);">글씨 크기 -</button>
+            <button onclick="fontSize(1);">글씨 크기 +</button>
+        </div>
+    </body>
+</html>
