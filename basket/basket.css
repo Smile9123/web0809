@@ -1,1 +1,252 @@
 @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#basketTitle {
+    padding-bottom: 20px;
+}
+
+#basketAdd {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#basketAdd h3 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basketAdd div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+
+#basketAdd #itemNameInpwWrap {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#basketAdd #itemSellerInpWrap {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#basketAdd #itemPriceInpWrap {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#basketAdd #itemCountInpWrap {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#basketAdd #addButtonWrap {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basketAdd div:nth-of-type(1) input,
+#basketAdd div:nth-of-type(2) input {
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#basketAdd div:nth-of-type(3) input,
+#basketAdd div:nth-of-type(4) input {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#addButtonWrap button {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+#couponAdd {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+#couponAdd h3 {
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+}
+
+#couponAdd div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+
+#couponAdd #couponNameInp {
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#couponAdd #couponSaleInp {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#couponAdd #couponButtonWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#couponAdd h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#couponAdd button {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+#basketList {
+    margin-top: 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#basketList li {
+    display: grid;
+    grid-template-columns: 5fr 3fr 3fr 3fr 1fr;
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
+}
+
+#basketList .itemName {
+    font-weight: bold;
+}
+
+#baksetList .itemNameWrap p:nth-child(2) {
+    font-size: 0.8em;
+    color: #333;
+}
+
+#basketList li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basketList .itemNameWrap {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.itemCountWrap input {
+    width: 50px;
+    height: 60%;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.itemTotalPriceWrap {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#basketFooter {
+    margin-top: 10px;
+    padding: 0.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemTotalCountWrap,
+.itemTotalPriceSumWrap {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.itemTotalCountWrap .basketCount,
+.itemTotalPriceSumWrap .itemTotalPriceSum {
+    font-size: 1.2em;
+    color: red;
+}
+
+#couponWrap {
+    margin: 30px 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 20px 5px;
+}
+
+#couponSelect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#couponSelect #coupon {
+    width: 50%;
+    height: 100%;
+}
+
+#couponSelect button {
+    width: 20%;
+    height: 100%;
+}
+
+#couponPrice {
+    display: grid;
+    grid-template-columns: 8fr 1fr 8fr 1fr 8fr;
+}
+
+#couponPrice div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#couponPrice div span {
+    padding: 0 10px;
+    color: red;
+    font-size: 1.4em;
+}
