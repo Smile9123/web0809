@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(function () {
+                $("#userid1, #userpw1").on("focus", function () {
+                    $(this).css("background-color", "beige");
+                });
+                $("#userid1, #userpw1").on("blur", function () {
+                    $(this).css("background-color", "white");
+                });
+                $("#userid2, #userpw2").on("focusin", function () {
+                    $(this).css("background-color", "beige");
+                });
+                $("#userid2, #userpw2").on("focusout", function () {
+                    $(this).css("background-color", "white");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>focus, blur</h1>
+        <form action="">
+            <p>
+                <label for="userid1">ID</label>
+                <input type="text" name="userid1" id="userid1" />
+            </p>
+            <p>
+                <label for="useripw1">PW</label>
+                <input type="password" name="useripw1" id="userpw1" />
+            </p>
+        </form>
+
+        <h1>focusin, focusout</h1>
+        <form action="">
+            <p>
+                <label for="userid2">ID</label>
+                <input type="text" name="userid2" id="userid2" />
+            </p>
+            <p>
+                <label for="useripw2">PW</label>
+                <input type="password" name="useripw2" id="userpw2" />
+            </p>
+        </form>
+    </body>
+</html>
