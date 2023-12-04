@@ -142,14 +142,14 @@ fadeTo() -> 지정 투명도로 변경한다
 소요시간: ms 단위 (1000, 500) or 키워드
 (slow, normal, fast)
 가속도: swing (느->빠->느), linear(일정속도)
-쿨백함수: 효과가 종료된 후에 실행되는 함수
+콜백함수: 효과가 종료된 후에 실행되는 함수
 
 
 
 애니메이션
 선택한 요소에 대해서 모션 효과를 부여(css 효과)
 
-요소.animate({css}, 시간, 가속도. 쿨백함수)
+요소.animate({css}, 시간, 가속도. 콜백함수)
 
 
 
@@ -171,3 +171,27 @@ dequeue() -> queue() 함수가 실행된 후에 애니메이션이 취소되지
 않도록 설정
 clearqueue() -> 큐를 비운다 -> 현재 실행중인 애니메이션을
 제외하고 모든 애니메이션을 삭제
+
+
+
+
+
+Ajax (Asynchronous Javascript And XML)
+Asynchronous -> async (비동기)
+-> 동기화 되지 않는다
+ajax: 서버와 HTML(JS)가 서로 통신할 때
+
+url (웹사이트 주소)
+type (어떤 방식으로 웹사이트와 통신할 것인가)
+  - get (서버에서 데이터 가져오는 것)
+  - post (서버로 데이터를 보내는 것)
+data (post에서 보낼 데이터)
+dataType (요청할 데이터의 형식, json, xml, html, text)
+success (데이터를 가져오거나 보내는데에 성공할 때 실행되는
+콜백함수 function(data))
+error (에러가 났을 때 실행되는 콜백함수 function(e)(e = error))
+
+오픈 API
+https://random.dog/woof.json -> 강아지 사진
+https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWUSD
+https://flagsapi.com/US/flat/64.png

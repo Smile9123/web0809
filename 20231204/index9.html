@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .flag {
+                height: 20px;
+            }
+            table,
+            tr,
+            td,
+            th {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(function () {
+                function currencyHTML(countryCode) {
+                    return `<tr id="${countryCode}">
+                    <td class="currency">
+                        <img src="" alt="" class="flag" />
+                        <span class="currencyName"></span>
+                    </td>
+                    <td class="baseprice"></td>
+                    <td class="time"></td>
+                </tr>`;
+                }
+                let country = ["USD", "JPY", "CNY", "EUR", "HKD", "TWD", "AUD"];
+                for (let i = 0; i < country.length; i++) {
+                    let countryHTML = currencyHTML(country[i]);
+                    $(".currencyTable").append(countryHTML);
+                    $.ajax({
+                        url:
+                            "https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRW" +
+                            country[i],
+                        type: "get",
+                        dataType: "json",
+                        success: function (data) {
+                            let currencyCode = data[0].currencyCode;
+                            $("#" + currencyCode + " td img").attr(
+                                "src",
+                                "https://flagsapi.com/" +
+                                    currencyCode.substring(0, 2) +
+                                    "/flat/64.png"
+                            );
+                            $("#" + currencyCode + " .currencyName").text(
+                                data[0].name
+                            );
+                            $("#" + currencyCode + " .baseprice").text(
+                                data[0].basePrice
+                            );
+                            $("#" + currencyCode + " .time").text(
+                                data[0].date + " " + data[0].time
+                            );
+                        },
+                        error: function (e) {
+                            alert("오류발생!");
+                        },
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>통화</th>
+                    <th>기준가</th>
+                    <th>기준시간</th>
+                </tr>
+            </thead>
+            <tbody class="currencyTable"></tbody>
+        </table>
+    </body>
+</html>
