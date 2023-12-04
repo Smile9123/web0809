@@ -21,6 +21,38 @@
                 $(document).on("keydown", function (e) {
                     let keyValue = e.keyCode;
                     $("#keyid").val(keyValue);
+
+                    let boxtop = $("#box").css("top").replace("px", "");
+                    let boxleft = $("#box").css("left").replace("px", "");
+
+                    switch (keyValue) {
+                        case 37:
+                            boxleft--;
+                            $("#box").css("left", boxleft + "px");
+                            break;
+                        case 38:
+                            boxtop--;
+                            $("#box").css("top", boxtop + "px");
+                            break;
+                        case 39:
+                            boxleft++;
+                            $("#box").css("left", boxleft + "px");
+                            break;
+                        case 40:
+                            boxtop++;
+                            $("#box").css("top", boxtop + "px");
+                            break;
+                        case 82:
+                            let red = Math.floor(Math.random() * 256);
+                            let green = Math.floor(Math.random() * 256);
+                            let blue = Math.floor(Math.random() * 256);
+                            $("#box").css(
+                                "background-color",
+                                "rgb(" + red + "," + green + "," + blue + ")"
+                            );
+                        default:
+                            break;
+                    }
                 });
             });
         </script>
